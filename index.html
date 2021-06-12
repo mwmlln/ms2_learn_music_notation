@@ -19,36 +19,62 @@
 <body>
     <header>
         <nav>
-         <div class="container">
-             <div class="row">
+            <div class="container"></div>
+            <div class="row">
                 <div class="col-12 text-center title">
                     Music Notation Game
                 </div>
                 <div class="col-12">
                     <ol>
-                        <li>Home</li>
-                        <li>How to Play</li>
+                        <li>
+                            <a href="index.html" class="active">HOME</a>
+                        </li>
+                        <li>
+                            <a href="how_to_play.html">How To Play</a>
+                        </li>
                     </ol>
                 </div>
-             </div>
-         </div>
+            </div>
+            </div>
         </nav>
     </header>
 
-    <section>
-        <div class="display-area">
-            display area
-        </div>
-        <div class="score-area">
+    <section class="text-center">
+        <h1>Which note is this?</h1>
+        <div class="row">
+            <div class="col-12 justify-center display-area">
+                display area
+            </div>
 
-        </div>
-        <div class="control-area">
+            <div class="text-center notataions mt-3">
+                <button type="button" class="btn btn-secondary">C</button>
+                <button type="button" class="btn btn-secondary">D</button>
+                <button type="button" class="btn btn-secondary">E</button>
+                <button type="button" class="btn btn-secondary">F</button>
+                <button type="button" class="btn btn-secondary">G</button>
+                <button type="button" class="btn btn-secondary">A</button>
+                <button type="button" class="btn btn-secondary">B</button>
+            </div>
 
+            <div class="control-area">
+
+            <div class="text-center score-area">
+                <div class="score">Score</div>
+                <div class="last-score">Last score</div>
+            </div>
+            <hr>
+            <div class="control-area">
+                <button class="game-start"><i class="fas fa-play-circle"></i></button>
+                <button class="hint"><i class="fas fa-info-circle"></i></button>
+                <button class="game-timer">60</button>
+            </div>
         </div>
     </section>
 
 
-    <footer>
+    <footer class="text-center">
+        <div> Created by m_m</div>
+        <div><i class="fab fa-github"></i></div>
 
     </footer>
 

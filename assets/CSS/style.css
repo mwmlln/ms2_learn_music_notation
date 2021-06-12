@@ -11,12 +11,16 @@ body {
     padding: 0;
    }
 
-   nav {
+nav, footer {
        background-color: black;
        clear: both;
        color: aliceblue;
        list-style: none;
    }
+
+footer {
+    height: 3rem;
+}
 
 .title {
     font-family: 'Tangerine', cursive, sans-serif;
@@ -28,4 +32,28 @@ ol {
   list-style: none;
   float: right;
   display: inline;
+}
+
+.display-area {
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 2%;
+    margin: auto;
+    height: 30vh;
+}
+
+.game-start {
+    font-size: 2em;
+}
+
+.hint {
+    font-size: 1.5em;
+}
+
+.game-timer {
+    font-size: 1.8em;
+    background-color: olive;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
 }
