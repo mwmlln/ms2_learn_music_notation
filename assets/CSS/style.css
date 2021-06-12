@@ -1,0 +1,31 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+:root {
+	--heading-font-family: 'Tangerine', cursive, sans-serif;
+	--text-font-family: Raleway, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+   }
+
+   nav {
+       background-color: black;
+       clear: both;
+       color: aliceblue;
+       list-style: none;
+   }
+
+.title {
+    font-family: 'Tangerine', cursive, sans-serif;
+    font-size: 2rem;
+    margin: auto;
+}
+
+ol {
+  list-style: none;
+  float: right;
+  display: inline;
+}
