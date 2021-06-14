@@ -22,6 +22,7 @@ footer {
     height: 3rem;
 }
 
+
 .title {
     font-family: 'Tangerine', cursive, sans-serif;
     font-size: 2rem;
@@ -37,9 +38,14 @@ ol {
 .display-area {
     width: 80%;
     border: 1px solid black;
-    border-radius: 2%;
+    border-radius: 5%;
     margin: auto;
     height: 30vh;
+    background-color: lightsteelblue;
+}
+
+.note-img {
+    height: 25vh;
 }
 
 .game-start {
@@ -56,4 +62,5 @@ ol {
     width: 2em;
     height: 2em;
     border-radius: 50%;
+    display: inline-block;
 }
