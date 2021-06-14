@@ -40,12 +40,14 @@ ol {
     border: 1px solid black;
     border-radius: 5%;
     margin: auto;
-    height: 30vh;
+    height: 40vh;
     background-color: lightsteelblue;
 }
 
 .note-img {
-    height: 25vh;
+    object-fit: scale-down;
+    display: inline-block;
+    max-width: 90%;
 }
 
 .game-start {
