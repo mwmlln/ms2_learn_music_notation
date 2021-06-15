@@ -8,7 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("data-type") === "game-start") {
                 startGame();
             } else {
-                isCorrect()
+                answer = isCorrect()
+                if (this.getAttribute("data-type") === answer ) {
+                    answerCorrect()
+                } else {
+                    answerWrong()
+                }
 
             }
         })
@@ -46,10 +51,20 @@ function displayImg() {
     document.getElementById("img-place").innerHTML = dispImg;
 };
 
+// Obtain the correct answer for the question
+
 function isCorrect() {
     let currentImg = document.getElementById("img-place").children[0];
     let keytype = currentImg.getAttribute("data-type");
-
+    return keytype
 };
 
 function scoreUp() {};
+
+function answerCorrect() {
+    alert("Congrats")
+}
+
+function answerWrong() {
+    alert("Good luck next time")
+}

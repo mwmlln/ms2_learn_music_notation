@@ -37,6 +37,7 @@ ol {
 
 .display-area {
     width: 80%;
+    max-width: 700px;
     border: 1px solid black;
     border-radius: 5%;
     margin: auto;
