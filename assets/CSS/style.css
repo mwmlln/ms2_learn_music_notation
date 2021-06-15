@@ -50,6 +50,20 @@ ol {
     max-width: 90%;
 }
 
+.is-correct {
+    color: lightgray;
+}
+
+.correct{
+    color: green;
+    font-size: 120%;
+}
+
+.wrong {
+    color:red;
+    font-size: 120%;
+}
+
 .game-start {
     font-size: 2em;
 }
