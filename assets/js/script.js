@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else {
                     answerWrong()
                 }
-
             }
         })
     }
@@ -28,11 +27,20 @@ function startGame() {
     displayImg();
 };
 
-//Run countdown Timer for game duration of 60seconds
+//Run countdown Timer for a game duration of 60seconds
 
-function runTimer() {};
-
-
+function runTimer() {
+    let count = 10;
+    let countDown = () => {
+        console.log(count--);
+    }
+    let intervalId = setInterval(() => {
+        countDown();
+        if (count < 0) {
+            clearInterval(intervalId);
+        }
+    }, 1000);
+};
 
 // Set the queastion images and answers
 let images = [
@@ -72,7 +80,7 @@ function answerCorrect() {
 function answerWrong() {
     wrongRed();
     displayImg();
-}
+    }
 
 /**
  * Get the current score from DOM and increase it by one
@@ -88,7 +96,16 @@ function scoreUp() {
 function correctGreen() {
     let correctSpan = document.getElementsByClassName("is-correct");
     correctSpan[0].classList.add("correct");
+    setTimeout(function() { rmGreen(); }, 2000);
 };
+
+/**
+  * Remove inserted class to reset the correct text
+  */   
+function rmGreen() {
+    let correctSpan = document.getElementsByClassName("is-correct");
+    correctSpan[0].classList.remove("correct");
+}
 
 /**
  * Insert class to turn the text for wrong red
@@ -96,7 +113,15 @@ function correctGreen() {
 function wrongRed() {
     let correctSpan = document.getElementsByClassName("is-correct");
     correctSpan[1].classList.add("wrong");
+    setTimeout(function() { rmRed(); }, 2000);
     }
 
 
-
+ /**
+  * Remove inserted class to reset the wrong text
+  */   
+function rmRed() {
+    let wrongSpan = document.getElementsByClassName("is-correct");
+    wrongSpan[1].classList.remove("wrong");
+}
+ 

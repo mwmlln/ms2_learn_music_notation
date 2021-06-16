@@ -27,6 +27,8 @@ concisits of image display area and key buttons
 
 ## Credits
 
+for count down timer partly used https://techacademy.jp/magazine/5537
+
 ### Content
 
 ### Media
