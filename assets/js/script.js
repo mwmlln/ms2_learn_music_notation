@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 startGame();
             } else {
                 answer = isCorrect()
-                if (this.getAttribute("data-type") === answer ) {
+                if (this.getAttribute("data-type") === answer) {
                     answerCorrect()
                 } else {
                     answerWrong()
@@ -51,20 +51,40 @@ function displayImg() {
     document.getElementById("img-place").innerHTML = dispImg;
 };
 
-// Obtain the correct answer for the question
-
+/**
+ * Obtain the correct answer for the question
+ */
 function isCorrect() {
     let currentImg = document.getElementById("img-place").children[0];
     let keytype = currentImg.getAttribute("data-type");
     return keytype
 };
 
-function scoreUp() {};
-
+/**
+ * Calling scoreUp and correctGreen then diplay random image 
+ */
 function answerCorrect() {
-    alert("Congrats")
+    scoreUp();
+    correctGreen();
+    displayImg();
 }
 
 function answerWrong() {
     alert("Good luck next time")
 }
+
+/**
+ * Get the current score from DOM and increase it by one
+ */
+function scoreUp() {
+    let oldtScore = parseInt(document.getElementById("corrent-score").innerText);
+    document.getElementById("corrent-score").innerText = ++oldtScore
+};
+
+/**
+ * Insert class to color the text for correct
+ */
+function correctGreen() {
+    let correctSpan = document.getElementsByClassName("is-correct");
+    correctSpan[0].classList.add("correct");
+};
