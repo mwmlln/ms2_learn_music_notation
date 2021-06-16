@@ -1,39 +1,49 @@
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Tangerine:wght@700&display=swap" rel="stylesheet">
-
 :root {
-	--heading-font-family: 'Tangerine', cursive, sans-serif;
-	--text-font-family: Raleway, sans-serif;
+    --heading-font-family: 'Italianno', cursive;;
+    --text-font-family : 'Raleway', sans-serif;
+    --header-font-color :aliceblue;
+    --bg-color: #a0b5b8;
+    --font-white: aliceblue;
 }
 
 body {
     margin: 0;
     padding: 0;
-   }
+    font-family: 'Raleway', sans-serif; ;
+}
 
-nav, footer {
-       background-color: black;
-       clear: both;
-       color: aliceblue;
-       list-style: none;
-   }
+nav {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif ;
+    background-color: black;
+    clear: both;
+    height: 3rem;
+    padding: 10px;
+ }
+
 
 footer {
     height: 3rem;
+    color: aliceblue;
+    background-color: black;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
 
 .title {
-    font-family: 'Tangerine', cursive, sans-serif;
+    font-family: 'Italianno', cursive, sans-serif;
     font-size: 2rem;
     margin: auto;
 }
 
-ol {
-  list-style: none;
-  float: right;
-  display: inline;
-}
 
 .display-area {
     width: 80%;
@@ -42,7 +52,7 @@ ol {
     border-radius: 5%;
     margin: auto;
     height: 40vh;
-    background-color: lightsteelblue;
+    background-color: #a0b5b8;
 }
 
 .note-img {
@@ -55,29 +65,34 @@ ol {
     color: lightgray;
 }
 
-.correct{
-    color: green;
+.correct {
+    color:#335109;
     font-size: 120%;
 }
 
 .wrong {
-    color:red;
+    color: #902028;
     font-size: 120%;
 }
 
 .game-start {
-    font-size: 2em;
+    font-size: 3rem;
+    border: none;
+    background: none;
 }
 
 .hint {
     font-size: 1.5em;
+    border: none;
+    background: none;
 }
 
 .game-timer {
     font-size: 1.8em;
-    background-color: olive;
+    color: aliceblue;
+    background-color: #413519;
     width: 2em;
     height: 2em;
     border-radius: 50%;
-    display: inline-block;
+    display: inline;
 }
