@@ -70,7 +70,8 @@ function answerCorrect() {
 }
 
 function answerWrong() {
-    alert("Good luck next time")
+    wrongRed();
+    displayImg();
 }
 
 /**
@@ -82,9 +83,20 @@ function scoreUp() {
 };
 
 /**
- * Insert class to color the text for correct
+ * Insert class to turn the text for correct green
  */
 function correctGreen() {
     let correctSpan = document.getElementsByClassName("is-correct");
     correctSpan[0].classList.add("correct");
 };
+
+/**
+ * Insert class to turn the text for wrong red
+ */
+function wrongRed() {
+    let correctSpan = document.getElementsByClassName("is-correct");
+    correctSpan[1].classList.add("wrong");
+    }
+
+
+

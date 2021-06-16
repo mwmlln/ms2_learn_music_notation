@@ -74,6 +74,7 @@ a {
 .wrong {
     color: #902028;
     font-size: 120%;
+    font-weight: bold;
 }
 
 .game-start {
