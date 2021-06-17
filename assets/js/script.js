@@ -33,15 +33,26 @@ function startGame() {
  
 function runTimer() {
     let counter = 60;
-    setInterval( function () {
+    let myTimer = setInterval( function () {
         counter--;
    
         if(counter >= 0 ) {
             id = document.getElementById("game-timer");
             id.innerHTML = counter;
+        } else {
+            gameOver();
+            clearInterval(myTimer);
         }
-    },1000);
-   
+    },1000); 
+}
+
+function gameOver(){
+     let yourScore = document.getElementById("corrent-score").innerHTML;
+     alert(`Time's UP! You scored ${yourScore}.`);
+     document.getElementById("last-score").innerHTML = yourScore;
+     document.getElementById("corrent-score").innerHTML = 0;
+     document.getElementById("game-timer").innerHTML = 60;
+     document.getElementById("img-place").innerHTML = '<img src="assets/images/notaions.png" alt="Music notation" class="note-img">';
 }
  
 // Set the queastion images and answers
@@ -98,7 +109,7 @@ function scoreUp() {
 function correctGreen() {
     let correctSpan = document.getElementsByClassName("is-correct");
     correctSpan[0].classList.add("correct");
-    setTimeout(function() { rmGreen(); }, 2000);
+    setTimeout(function() { rmGreen(); }, 1000);
 };
 
 /**
@@ -115,7 +126,7 @@ function rmGreen() {
 function wrongRed() {
     let correctSpan = document.getElementsByClassName("is-correct");
     correctSpan[1].classList.add("wrong");
-    setTimeout(function() { rmRed(); }, 2000);
+    setTimeout(function() { rmRed(); }, 1000);
     }
 
 
