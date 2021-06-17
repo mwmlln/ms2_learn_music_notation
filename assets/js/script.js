@@ -23,25 +23,27 @@ document.addEventListener("DOMContentLoaded", function () {
 // function to start the process of the game
 
 function startGame() {
-
+    runTimer();
     displayImg();
 };
 
-//Run countdown Timer for a game duration of 60seconds
-
+/**
+ * Run countdown Timer for a game duration of 60seconds
+ */
+ 
 function runTimer() {
-    let count = 10;
-    let countDown = () => {
-        console.log(count--);
-    }
-    let intervalId = setInterval(() => {
-        countDown();
-        if (count < 0) {
-            clearInterval(intervalId);
+    let counter = 60;
+    setInterval( function () {
+        counter--;
+   
+        if(counter >= 0 ) {
+            id = document.getElementById("game-timer");
+            id.innerHTML = counter;
         }
-    }, 1000);
-};
-
+    },1000);
+   
+}
+ 
 // Set the queastion images and answers
 let images = [
     '<img src="assets/images/note_c.png"  data-type="c" alt="Music notation image" class="note-img">',
