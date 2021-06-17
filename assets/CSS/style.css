@@ -98,16 +98,16 @@ a {
 
 .timer-container {
     width: 50px;
-    display: -webkit-inline-box;
+    display: inline-flex;
     height: 50px;
-    border-radius: 2%;
+    border-radius: 10%;
     background-color: #413519;
-    align-items: center;
     justify-content: center;
 }
 
 .game-timer {
     font-size: 1.8em;
+    font-family: 'Bungee Inline', cursive, sans-serif;
     color: aliceblue;
 }
 
