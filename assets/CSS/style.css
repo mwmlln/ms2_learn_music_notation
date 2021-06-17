@@ -61,6 +61,10 @@ a {
     max-width: 90%;
 }
 
+.judge {
+    line-height: 2rem;
+}
+
 .is-correct {
     color: lightgray;
 }
@@ -77,6 +81,12 @@ a {
     font-weight: bold;
 }
 
+.control-area {
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+}
+
 .game-start {
     font-size: 3rem;
     border: none;
@@ -91,9 +101,7 @@ a {
 }
 
 .hint {
-    font-size: 1.5em;
-    border: none;
-    background: none;
+    height: fit-content;
 }
 
 .timer-container {

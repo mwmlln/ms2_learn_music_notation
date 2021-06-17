@@ -41,6 +41,7 @@
         <div class="col-12 text-center title">
             <h1>Music Notation Game</h1>
         </div>
+        <div class="container"></div>
         <h2>Which note is this?</h2>
         <div class="row">
             <div class="col-12 justify-center display-area">
@@ -59,23 +60,48 @@
                 <button type="button" class="btn btn-secondary game-btn" data-type="b">B</button>
             </div>
             <div>
-                <div class="mt-3">
+                <div class="judge">
                     <span class="is-correct">Correct</span>
                     <span>|</span>
                     <span class="is-correct">Wrong</span>
                 </div>
 
-                <div class="control-area">
-                    <div class="text-center score-area">
-                        <div class="score">Score : <span id="corrent-score">0</span></div>
-                        <div class="last-score">Last score : <span id="last-score">0</span></div>
-                    </div>
+
+                <div class="text-center score-area">
+                    <div class="score">Score : <span id="corrent-score">0</span></div>
+                    <div class="last-score">Last score : <span id="last-score">0</span></div>
                 </div>
 
-                <div>
+
+                <div class="control-area">
                     <button data-type="game-start" class="game-start game-btn"><i
                             class="fas fa-play-circle"></i></button>
-                    <button class="hint"><i class="fas fa-info-circle"></i></button>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary hint" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fas fa-info-circle"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Here is the hint!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="assets/images/notaions.png" alt="Music notation" class="note-img">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="timer-container">
                         <div id="game-timer" class="game-timer">60</div>
                     </div>
