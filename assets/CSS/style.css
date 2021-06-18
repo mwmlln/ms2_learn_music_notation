@@ -45,6 +45,10 @@ a {
     color: aliceblue;
 }
 
+div > p {
+margin-bottom: 0;
+}
+
 .title {
     font-family: 'Italianno', cursive, sans-serif;
     font-size: 2rem;
@@ -88,12 +92,6 @@ a {
     font-weight: bold;
 }
 
-.control-area {
-    display: flex;
-    justify-content: space-around;
-    height: fit-content;
-}
-
 .game-start {
     font-size: 5rem;
     border: none;
@@ -120,16 +118,17 @@ a {
 }
 
 .timer-container {
-    width: 50px;
+    width: 3rem;
     display: inline-flex;
-    height: 50px;
+    height: 3rem;
     border-radius: 10%;
     background-color: #413519;
-    justify-content: center;
+    justify-content: start;
 }
 
 .game-timer {
-    font-size: 1.8em;
+    font-size: 2rem;
     font-family: 'Bungee Inline', cursive, sans-serif;
     color: aliceblue;
 }
+
