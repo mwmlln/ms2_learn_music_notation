@@ -2,6 +2,7 @@
 // Get the button elements and add event listeners to them
 
 document.addEventListener("DOMContentLoaded", function () {
+    hideGamePanel()
     let buttons = document.getElementsByClassName('game-btn');
     for (let button of buttons) {
         button.addEventListener("click", function () {
@@ -24,9 +25,22 @@ document.addEventListener("DOMContentLoaded", function () {
  * function to start the process of the game
  */
 function startGame() {
+    showGamePanel() 
     runTimer();
     displayImg();
 };
+
+/**
+ * Function to display/hide the gaming panel
+ */
+const gamePanel = document.getElementById("game-panel");
+function hideGamePanel() {
+    gamePanel.style.display = "none";
+  }
+ function showGamePanel() {
+    gamePanel.style.display = "block";
+  }
+
 
 /**
  * Run countdown Timer for a game duration of 60seconds
