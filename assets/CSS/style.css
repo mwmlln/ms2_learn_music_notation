@@ -91,6 +91,7 @@ a {
     font-size: 3rem;
     border: none;
     background: none;
+    margin-top:-15px;
 }
 
 .game-start::after {
@@ -102,7 +103,16 @@ a {
 
 .hint {
     height: fit-content;
+    padding: 0 5px;
 }
+
+.hint::after {
+    content: "HINT";
+    font-size: 0.6rem;
+    display: flex;
+
+}
+
 
 .timer-container {
     width: 50px;
@@ -117,13 +127,5 @@ a {
     font-size: 1.8em;
     font-family: 'Bungee Inline', cursive, sans-serif;
     color: aliceblue;
-}
-
-.game-timer::after {
-    content: "TIME";
-    font-size: 0.5rem;
-    display: flex;
-    margin-bottom: 2px;
-    justify-content: center;
 }
 
