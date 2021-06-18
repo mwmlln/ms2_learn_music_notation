@@ -20,8 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// function to start the process of the game
-
+/**
+ * function to start the process of the game
+ */
 function startGame() {
     runTimer();
     displayImg();
@@ -30,8 +31,7 @@ function startGame() {
 /**
  * Run countdown Timer for a game duration of 60seconds
  */
- 
-function runTimer() {
+ function runTimer() {
     let counter = 60;
     let myTimer = setInterval( function () {
         counter--;
@@ -46,6 +46,9 @@ function runTimer() {
     },1000); 
 }
 
+/**
+ * Function to stop the game and reset score and timer
+ */
 function gameOver(){
      let yourScore = document.getElementById("corrent-score").innerHTML;
      alert(`Time's UP! You scored ${yourScore}.`);
@@ -66,7 +69,9 @@ let images = [
     '<img src="assets/images/note_b.png"  data-type="b" alt="Music notation image" class="note-img">',
 ];
 
-//  Display random selection of the images 
+/**
+ * Display random selection of the image 
+ */  
 function displayImg() {
     let dispImg = images[Math.floor(Math.random() * images.length)];
     document.getElementById("img-place").innerHTML = dispImg;
@@ -90,6 +95,9 @@ function answerCorrect() {
     displayImg();
 }
 
+/**
+ * Calling class to turn text red for Wrong and display new image
+ */
 function answerWrong() {
     wrongRed();
     displayImg();
