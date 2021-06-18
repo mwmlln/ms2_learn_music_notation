@@ -23,16 +23,43 @@
 <body>
     <header>
         <nav>
-            <div class="container "></div>
+            <div class="container"></div>
             <div class="row">
-                <div class="col-12 d-flex justify-content-between">
-                    <div>
+                <ul class="col-12 d-flex justify-content-between">
+                    <li>
                         <a href="index.html" class="active"><i class="fas fa-home"></i></a>
-                    </div>
-                    <div>
+                    </li>
+                    <li>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-light hint" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i class="fas fa-info-circle"></i>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Here is the hint!</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="assets/images/notaions.png" alt="Music notation" class="note-img">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
                         <a href="how_to_play.html">How To Play</a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -41,10 +68,15 @@
         <div class="col-12 text-center title">
             <h1>Music Notation Game</h1>
         </div>
+        <div class="mb-3">
+            <button data-type="game-start" class="game-start game-btn"><i class="fas fa-play-circle"></i></button>
+        </div>
+
         <div class="container">
-            <h2>Which note is this?</h2>
+
             <div class="row">
                 <div class="col-12 justify-center display-area">
+                    <h3 class="mt-3">Which note is this?</h3>
                     <div id="img-place">
                         <img src="assets/images/notaions.png" alt="Music notation" class="note-img">
                     </div>
@@ -73,35 +105,10 @@
                     </div>
 
 
-                    <div class="control-area align-bottom">
-                        <button data-type="game-start" class="game-start game-btn"><i
-                                class="fas fa-play-circle"></i></button>
+                    <div class="control-area">
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary hint" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            <i class="fas fa-info-circle"></i>
-                        </button>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Here is the hint!</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="assets/images/notaions.png" alt="Music notation" class="note-img">
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="timer-container">
                             <div id="game-timer" class="game-timer">60</div>
                         </div>
@@ -112,7 +119,7 @@
     </section>
 
 
-    <footer class="text-center">
+    <footer class="text-center mt-3">
         <div> Created by m_m</div>
         <div><a href="https://github.com/" target="_blank" rel="noopener"
                 aria-label="Open our Github page in a new tab"><i class="fab fa-github"></i></a></div>

@@ -1,5 +1,4 @@
 :root {
-    --heading-font-family: 'Italianno', cursive;;
     --text-font-family : 'Raleway', sans-serif;
     --header-font-color :aliceblue;
     --bg-color: #a0b5b8;
@@ -9,23 +8,24 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif; ;
+    font-family:var(--text-font-family); 
 }
 
 nav {
     font-size: 1.2rem;
-    font-family: 'Raleway', sans-serif ;
+    font-family: var(--text-font-family) ;
     background-color: black;
     clear: both;
-    height: 3rem;
+    height: 60px;
     padding: 10px;
  }
 
 
 footer {
-    height: 3rem;
-    color: aliceblue;
+    height: 100px;
+    color:var(--font-white);
     background-color: black;
+    padding-top: 2rem;
 }
 
 h1 {
@@ -88,14 +88,14 @@ a {
 }
 
 .game-start {
-    font-size: 3rem;
+    font-size: 5rem;
     border: none;
     background: none;
     margin-top:-15px;
 }
 
 .game-start::after {
-    content: "START";
+    content: "Press to start the game";
     font-size: 1rem;
     display: flex;
     margin-top:-15px
