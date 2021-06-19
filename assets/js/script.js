@@ -2,7 +2,6 @@
 // Get the button elements and add event listeners to them
 
 document.addEventListener("DOMContentLoaded", function () {
-    hideGamePanel()
     let buttons = document.getElementsByClassName('game-btn');
     for (let button of buttons) {
         button.addEventListener("click", function () {
