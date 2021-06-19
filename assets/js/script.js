@@ -38,9 +38,23 @@ function hideGamePanel() {
   }
  function showGamePanel() {
     gamePanel.style.display = "block";
+    gameBtnHide()
+  }
+
+  
+ //  Toggle display of start button.
+ 
+  const gameStartBtn = document.getElementsByClassName("game-start")[0];
+  function gameBtnHide() {
+    gameStartBtn.style.display = "none";
+  }
+ 
+  function gameBtnShow() {
+    gameStartBtn.style.display = "block";
   }
 
 
+  
 /**
  * Run countdown Timer for a game duration of 60seconds
  */
@@ -69,6 +83,7 @@ function gameOver(){
      document.getElementById("corrent-score").innerHTML = 0;
      document.getElementById("game-timer").innerHTML = 60;
      document.getElementById("img-place").innerHTML = '<img src="assets/images/notaions.png" alt="Music notation" class="note-img">';
+     gameBtnShow();
 }
  
 // Set the queastion images and answers
