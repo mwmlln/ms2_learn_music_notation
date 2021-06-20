@@ -126,6 +126,36 @@ margin-bottom: 0;
     justify-content: center;
 }
 
+
+.keywhite {
+    height: 150px;
+    margin: 0;
+    border: 1px solid black;
+    position: relative;
+    padding: 2px;
+}
+
+.keywhite > btn {
+    position: absolute;
+    bottom: 2px;
+    margin: auto;
+}
+
+.keyblack {
+    background-color: black;
+    height: 80px;
+    position: absolute;
+    width: 70%;
+    top: 0;
+    right: -35%;
+}
+
+.keynote {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+}
+
 .game-timer {
     font-size: 2rem;
     font-family: 'Bungee Inline', cursive, sans-serif;
