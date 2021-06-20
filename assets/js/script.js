@@ -84,6 +84,7 @@ function gameOver(){
      document.getElementById("game-timer").innerHTML = 60;
      document.getElementById("img-place").innerHTML = '<img src="assets/images/notaions.png" alt="Music notation" class="note-img">';
      gameBtnShow();
+     hideGamePanel()
 }
  
 // Set the queastion images and answers
