@@ -38,6 +38,7 @@ footer {
 h1 {
     font-size: 3.5rem;
     font-weight: bold;
+    font-family: 'Italianno', cursive, sans-serif;
 }
 
 a {
@@ -48,13 +49,6 @@ a {
 div > p {
 margin-bottom: 0;
 }
-
-.title {
-    font-family: 'Italianno', cursive, sans-serif;
-    font-size: 2rem;
-    margin: auto;
-}
-
 
 .display-area {
     width: 60%;
