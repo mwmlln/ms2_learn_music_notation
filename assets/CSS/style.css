@@ -144,11 +144,12 @@ margin-bottom: 0;
     }
 }
 
- {
+@media only screen and (max-width: 300px){
     .keynote {
         font-size: 0.8rem;
     }
     .btn {
+        margin: auto 0;
         padding:6px;
     }
 }
