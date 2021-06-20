@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("data-type") === "game-start") {
                 startGame();
             } else {
+
                 answer = isCorrect()
                 if (this.getAttribute("data-type") === answer) {
                     answerCorrect()
@@ -175,3 +176,9 @@ function rmRed() {
     wrongSpan[1].classList.remove("wrong");
 }
  
+function playNote() {
+    let currentkey = this.getAttribute("data-type");
+    let playkey = document.getElementById(`${currentkey}`);
+    playkey.play();
+}
+
