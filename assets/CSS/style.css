@@ -136,4 +136,20 @@ margin-bottom: 0;
     .display-area {
         width: 80%;
     }
+   
 }
+@media only screen and (max-width: 380px) {
+    h1 {
+        font-size: 90%;
+    }
+}
+
+ {
+    .keynote {
+        font-size: 0.8rem;
+    }
+    .btn {
+        padding:6px;
+    }
+}
+
