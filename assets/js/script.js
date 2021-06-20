@@ -50,7 +50,7 @@ function hideGamePanel() {
   }
  
   function gameBtnShow() {
-    gameStartBtn.style.display = "block";
+    gameStartBtn.style.display = "inline-block";
   }
 
 
