@@ -46,8 +46,8 @@ a {
     color: aliceblue;
 }
 
-div > p {
-margin-bottom: 0;
+div>p {
+    margin-bottom: 0;
 }
 
 .display-area {
@@ -57,14 +57,15 @@ margin-bottom: 0;
     border: 1px solid black;
     border-radius: 5%;
     margin: auto;
-    height: 40vh;
+    height: 35vh;
     background-color: #a0b5b8;
 }
 
 .note-img {
     object-fit: scale-down;
     display: inline-block;
-    max-width: 90%;
+    max-width: 80%;
+    margin-top: -15px;
 }
 
 .judge {
@@ -120,6 +121,9 @@ margin-bottom: 0;
     justify-content: center;
 }
 
+.notataions {
+    flex-wrap: nowrap;
+}
 
 .keywhite {
     height: 150px;
@@ -129,7 +133,7 @@ margin-bottom: 0;
     padding: 2px;
 }
 
-.keywhite > btn {
+.keywhite>btn {
     position: absolute;
     bottom: 2px;
     margin: auto;
@@ -160,21 +164,28 @@ margin-bottom: 0;
     .display-area {
         width: 80%;
     }
-   
 }
+
+@media only screen and (max-width: 800px) {
+    .keywhite {
+        width: 12vw;
+    }
+} 
+
+
 @media only screen and (max-width: 380px) {
     h1 {
         font-size: 90%;
     }
 }
 
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 300px) {
     .keynote {
         font-size: 0.8rem;
     }
+
     .btn {
         margin: auto 0;
-        padding:6px;
+        padding: 6px;
     }
 }
-
