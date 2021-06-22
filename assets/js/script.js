@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("data-type") === "game-start") {
                 startGame();
             } else if (this.getAttribute("data-type") === "game-stop") {
-                abortGame();
+                timerStat = false; 
             } else {
                 answer = isCorrect();
                 if (this.getAttribute("data-type") === answer) {
@@ -38,44 +38,47 @@ function startGame() {
  * Function to display/hide the gaming panel
  */
 const gamePanel = document.getElementById("game-panel");
+
 function hideGamePanel() {
     gamePanel.style.display = "none";
-  }
- function showGamePanel() {
+}
+
+function showGamePanel() {
     gamePanel.style.display = "block";
     gameBtnHide();
-  }
+}
 
-  
- //  Toggle display of start button.
- 
-  const gameStartBtn = document.getElementsByClassName("game-start")[0];
-  function gameBtnHide() {
+
+//  Toggle display of start button.
+
+const gameStartBtn = document.getElementsByClassName("game-start")[0];
+
+function gameBtnHide() {
     gameStartBtn.style.display = "none";
-  }
- 
-  function startBtnShow() {
+}
+
+function startBtnShow() {
     gameStartBtn.style.display = "inline-block";
-  }
+}
 
 
-  
+
 /**
  * Run countdown Timer for a game duration of 60seconds
  */
- function runTimer() {
+function runTimer() {
     let counter = 60;
-    let myTimer = setInterval( function () {
+    let myTimer = setInterval(function () {
         counter--;
-   
-        if(counter >= 0 && timerStat == true ) {
+
+        if (counter >= 0 && timerStat == true) {
             timer = document.getElementById("game-timer");
             timer.innerHTML = counter;
         } else {
             clearInterval(myTimer);
             gameOver();
         }
-    },1000);
+    }, 1000);
 }
 
 /**
@@ -83,28 +86,15 @@ function hideGamePanel() {
  */
 function gameOver() {
     let yourScore = document.getElementById("corrent-score").innerHTML;
-     alert(`Game Over! You scored ${yourScore}.`);
-     document.getElementById("last-score").innerHTML = yourScore;
-     document.getElementById("corrent-score").innerHTML = 0;
-     document.getElementById("game-timer").innerHTML = 60;
-     document.getElementById("img-place").innerHTML = '<img src="assets/images/notaions.png" alt="Music notation" class="note-img">';
-     startBtnShow();
-     hideGamePanel();
-}
-
-/**
- * Function to abort game and display start button
- */
-function abortGame() {
-    timerStat = false;
+    alert(`Game Over! You scored ${yourScore}.`);
+    document.getElementById("last-score").innerHTML = yourScore;
     document.getElementById("corrent-score").innerHTML = 0;
     document.getElementById("game-timer").innerHTML = 60;
     document.getElementById("img-place").innerHTML = '<img src="assets/images/notaions.png" alt="Music notation" class="note-img">';
     startBtnShow();
     hideGamePanel();
-    
 }
- 
+
 // Set the queastion images and answers
 let images = [
     '<img src="assets/images/note_c.png"  data-type="c" alt="Music notation image" class="note-img">',
@@ -118,7 +108,7 @@ let images = [
 
 /**
  * Display random selection of the image 
- */  
+ */
 function displayImg() {
     let dispImg = images[Math.floor(Math.random() * images.length)];
     document.getElementById("img-place").innerHTML = dispImg;
@@ -148,7 +138,7 @@ function answerCorrect() {
 function answerWrong() {
     wrongRed();
     displayImg();
-    }
+}
 
 /**
  * Get the current score from DOM and increase it by one
@@ -164,12 +154,14 @@ function scoreUp() {
 function correctGreen() {
     let correctSpan = document.getElementsByClassName("is-correct");
     correctSpan[0].classList.add("correct");
-    setTimeout(function() { rmGreen(); }, 1000);
+    setTimeout(function () {
+        rmGreen();
+    }, 1000);
 }
 
 /**
-  * Remove inserted class to reset the correct text
-  */   
+ * Remove inserted class to reset the correct text
+ */
 function rmGreen() {
     let correctSpan = document.getElementsByClassName("is-correct");
     correctSpan[0].classList.remove("correct");
@@ -181,15 +173,16 @@ function rmGreen() {
 function wrongRed() {
     let correctSpan = document.getElementsByClassName("is-correct");
     correctSpan[1].classList.add("wrong");
-    setTimeout(function() { rmRed(); }, 1000);
-    }
+    setTimeout(function () {
+        rmRed();
+    }, 1000);
+}
 
 
- /**
-  * Remove inserted class to reset the wrong text
-  */   
+/**
+ * Remove inserted class to reset the wrong text
+ */
 function rmRed() {
     let wrongSpan = document.getElementsByClassName("is-correct");
     wrongSpan[1].classList.remove("wrong");
 }
- 
