@@ -1,8 +1,9 @@
 :root {
     --text-font-family: 'Raleway', sans-serif;
     --header-font-color: aliceblue;
-    --bg-color: #a0b5b8;
+    --bg-color: #e4c4a4;
     --font-white: aliceblue;
+    --nav-color: #140504;
 }
 
 body {
@@ -21,7 +22,7 @@ section {
 nav {
     font-size: 1.2rem;
     font-family: var(--text-font-family);
-    background-color: black;
+    background-color:var(--nav-color);
     clear: both;
     height: 60px;
     padding: 10px;
@@ -31,7 +32,7 @@ nav {
 footer {
     height: 100px;
     color: var(--font-white);
-    background-color: black;
+    background-color:var(--nav-color);
     padding-top: 2rem;
 }
 
@@ -45,7 +46,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: aliceblue;
+    color: var(--font-white);
 }
 
 div>p {
@@ -57,11 +58,11 @@ button {
 }
 
 .game-stop {
-    color: #902028;
+    color: #641c3c;
 }
 
 .game-stop > button {
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: white;
 }
 
@@ -69,11 +70,11 @@ button {
     width: 60%;
     max-width: 700px;
     min-height: 250px;
-    border: 1px solid black;
+    border: 1px solid var(--nav-color);
     border-radius: 5%;
     margin: auto;
     height: 35vh;
-    background-color: #a0b5b8;
+    background-color: var(--bg-color);
 }
 
 .note-img {
@@ -92,13 +93,13 @@ button {
 }
 
 .correct {
-    color: #335109;
+    color: #30cb43;
     font-size: 120%;
     font-weight: bold;
 }
 
 .wrong {
-    color: #902028;
+    color: #D62828;
     font-size: 120%;
     font-weight: bold;
 }
@@ -113,7 +114,6 @@ button {
     content: "Press the button to start the game";
     font-size: 0.8rem;
     display: flex;
-
 }
 
 .hint {
