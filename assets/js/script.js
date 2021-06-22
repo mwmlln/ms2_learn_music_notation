@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 answer = isCorrect()
                 if (this.getAttribute("data-type") === answer) {
-                    this.classList.add("correct");
                     answerCorrect()
                 } else {
                     answerWrong()
@@ -145,8 +144,8 @@ function scoreUp() {
  * Insert class to turn the text for correct green
  */
 function correctGreen() {
-    let correctBtn = this.
-    this.classList.add("correct");
+    let correctSpan = document.getElementsByClassName("is-correct");
+    correctSpan[0].classList.add("correct");
     setTimeout(function() { rmGreen(); }, 1000);
 };
 
