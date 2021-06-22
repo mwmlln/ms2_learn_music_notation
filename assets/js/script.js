@@ -83,7 +83,7 @@ function hideGamePanel() {
  */
 function gameOver() {
     let yourScore = document.getElementById("corrent-score").innerHTML;
-     alert(`Time's UP! You scored ${yourScore}.`);
+     alert(`Game Over! You scored ${yourScore}.`);
      document.getElementById("last-score").innerHTML = yourScore;
      document.getElementById("corrent-score").innerHTML = 0;
      document.getElementById("game-timer").innerHTML = 60;

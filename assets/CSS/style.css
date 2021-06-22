@@ -52,6 +52,19 @@ div>p {
     margin-bottom: 0;
 }
 
+button {
+    border: none;
+}
+
+.game-stop {
+    color: #902028;
+}
+
+.game-stop > button {
+    font-size: 1rem;
+    background-color: none;
+}
+
 .display-area {
     width: 60%;
     max-width: 700px;
