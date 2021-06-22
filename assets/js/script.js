@@ -192,9 +192,3 @@ function rmRed() {
     wrongSpan[1].classList.remove("wrong");
 }
  
-function playNote() {
-    let currentkey = this.getAttribute("data-type");
-    let playkey = document.getElementById(`${currentkey}`);
-    playkey.play();
-}
-
