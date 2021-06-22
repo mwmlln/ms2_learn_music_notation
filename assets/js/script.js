@@ -21,11 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+//setting timer status
+let timerStat = false;
 
 /**
  * function to start the process of the game
  */
 function startGame() {
+    timerStat = true;
     showGamePanel() 
     runTimer();
     displayImg();
@@ -65,12 +68,12 @@ function hideGamePanel() {
     let myTimer = setInterval( function () {
         counter--;
    
-        if(counter >= 0 ) {
-            id = document.getElementById("game-timer");
-            id.innerHTML = counter;
+        if(counter >= 0 && timerStat == true ) {
+            timer = document.getElementById("game-timer");
+            timer.innerHTML = counter;
         } else {
-            gameOver();
             clearInterval(myTimer);
+            gameOver();
         }
     },1000);
 }
@@ -78,8 +81,7 @@ function hideGamePanel() {
 /**
  * Function to stop the game and reset score and timer
  */
-function gameOver() {
-     let yourScore = document.getElementById("corrent-score").innerHTML;
+function gameOver() {  
      alert(`Time's UP! You scored ${yourScore}.`);
      document.getElementById("last-score").innerHTML = yourScore;
      document.getElementById("corrent-score").innerHTML = 0;
@@ -93,11 +95,13 @@ function gameOver() {
  * Function to abort game and display start button
  */
 function abortGame() {
+    timerStat = false;
     document.getElementById("corrent-score").innerHTML = 0;
     document.getElementById("game-timer").innerHTML = 60;
     document.getElementById("img-place").innerHTML = '<img src="assets/images/notaions.png" alt="Music notation" class="note-img">';
     startBtnShow();
     hideGamePanel();
+    
 }
  
 // Set the queastion images and answers
