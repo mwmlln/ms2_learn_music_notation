@@ -81,7 +81,8 @@ function hideGamePanel() {
 /**
  * Function to stop the game and reset score and timer
  */
-function gameOver() {  
+function gameOver() {
+    let yourScore = document.getElementById("corrent-score").innerHTML;
      alert(`Time's UP! You scored ${yourScore}.`);
      document.getElementById("last-score").innerHTML = yourScore;
      document.getElementById("corrent-score").innerHTML = 0;
