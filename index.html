@@ -70,13 +70,21 @@
         </div>
 
         <div class="justify-center">
-            <button data-type="game-start" class="game-start game-btn"><i class="fas fa-play-circle"></i></button>    
+            <button data-type="game-start" class="game-start game-btn"><i class="fas fa-play-circle"></i></button>
         </div>
 
         <div id="game-panel" style="display:none;" class="container">
-            <p>TIME LEFT</p>
-            <div class="timer-container">
-                <div id="game-timer" class="game-timer">60</div>
+            <div class="d-flex flex-row col-8 offset-2 justify-content-evenly align-items-center">
+                <div>
+                    <p>TIME LEFT</p>
+                    <div class="timer-container">
+                        <div id="game-timer" class="game-timer">60</div>
+                    </div>
+                </div>
+                <div>
+                    <p>RESET</p>
+                    <button data-type="game-stop" class="game-btn"> <i class="fas fa-stop-circle"></i></button>
+                </div>
             </div>
 
             <div class="row">
@@ -89,13 +97,20 @@
                 </div>
 
                 <div class="row text-center notataions d-flex justify-content-center mt-3 mb-3">
-                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote" data-type="c">C</button> <span class="keyblack"></span></span>
-                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote" data-type="d">D</button> <span class="keyblack"></span></span>
-                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote" data-type="e">E</button></span>
-                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote" data-type="f">F</button> <span class="keyblack"></span></span>
-                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote" data-type="g">G</button> <span class="keyblack"></span></span>
-                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote" data-type="a">A</button> <span class="keyblack"></span></span>
-                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote" data-type="b">B</button></span>
+                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote"
+                            data-type="c">C</button> <span class="keyblack"></span></span>
+                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote"
+                            data-type="d">D</button> <span class="keyblack"></span></span>
+                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote"
+                            data-type="e">E</button></span>
+                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote"
+                            data-type="f">F</button> <span class="keyblack"></span></span>
+                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote"
+                            data-type="g">G</button> <span class="keyblack"></span></span>
+                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote"
+                            data-type="a">A</button> <span class="keyblack"></span></span>
+                    <span class="keywhite col-1"><button type="button" class="btn btn-secondary game-btn keynote"
+                            data-type="b">B</button></span>
                 </div>
                 <div>
                     <div class="judge">
@@ -123,13 +138,13 @@
     </footer>
 
     <!--Audio File-->
-    <audio id="notec"  src="assets/audio/c.mp3" preload="auto"></audio>
-    <audio id="noted"  src="assets/audio/d.mp3" preload="auto"></audio>
-    <audio id="notee"  src="assets/audio/e.mp3" preload="auto"></audio>
-    <audio id="notef"  src="assets/audio/f.mp3" preload="auto"></audio>
-    <audio id="noteg"  src="assets/audio/g.mp3" preload="auto"></audio>
-    <audio id="notea"  src="assets/audio/a.mp3" preload="auto"></audio>
-    <audio id="noteb"  src="assets/audio/b.mp3" preload="auto"></audio>
+    <audio id="notec" src="assets/audio/c.mp3" preload="auto"></audio>
+    <audio id="noted" src="assets/audio/d.mp3" preload="auto"></audio>
+    <audio id="notee" src="assets/audio/e.mp3" preload="auto"></audio>
+    <audio id="notef" src="assets/audio/f.mp3" preload="auto"></audio>
+    <audio id="noteg" src="assets/audio/g.mp3" preload="auto"></audio>
+    <audio id="notea" src="assets/audio/a.mp3" preload="auto"></audio>
+    <audio id="noteb" src="assets/audio/b.mp3" preload="auto"></audio>
 
     <!-- font awsome script -->
     <script src="https://kit.fontawesome.com/12c8ab0e8b.js" crossorigin="anonymous"></script>

@@ -7,12 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "game-start") {
                 startGame();
+            } else if (this.getAttribute("data-type") === "game-stop") {
+                abortGame();
             } else {
                 answer = isCorrect()
                 if (this.getAttribute("data-type") === answer) {
-                    answerCorrect()
+                    answerCorrect();
                 } else {
-                    answerWrong()
+                    answerWrong();
                 }
             }
         })
@@ -49,7 +51,7 @@ function hideGamePanel() {
     gameStartBtn.style.display = "none";
   }
  
-  function gameBtnShow() {
+  function startBtnShow() {
     gameStartBtn.style.display = "inline-block";
   }
 
@@ -70,21 +72,32 @@ function hideGamePanel() {
             gameOver();
             clearInterval(myTimer);
         }
-    },1000); 
+    },1000);
 }
 
 /**
  * Function to stop the game and reset score and timer
  */
-function gameOver(){
+function gameOver() {
      let yourScore = document.getElementById("corrent-score").innerHTML;
      alert(`Time's UP! You scored ${yourScore}.`);
      document.getElementById("last-score").innerHTML = yourScore;
      document.getElementById("corrent-score").innerHTML = 0;
      document.getElementById("game-timer").innerHTML = 60;
      document.getElementById("img-place").innerHTML = '<img src="assets/images/notaions.png" alt="Music notation" class="note-img">';
-     gameBtnShow();
-     hideGamePanel()
+     startBtnShow();
+     hideGamePanel();
+}
+
+/**
+ * Function to abort game and display start button
+ */
+function abortGame() {
+    document.getElementById("corrent-score").innerHTML = 0;
+    document.getElementById("game-timer").innerHTML = 60;
+    document.getElementById("img-place").innerHTML = '<img src="assets/images/notaions.png" alt="Music notation" class="note-img">';
+    startBtnShow();
+    hideGamePanel();
 }
  
 // Set the queastion images and answers
