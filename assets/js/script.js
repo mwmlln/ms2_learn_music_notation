@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (this.getAttribute("data-type") === "game-stop") {
                 abortGame();
             } else {
-                answer = isCorrect()
+                answer = isCorrect();
                 if (this.getAttribute("data-type") === answer) {
                     answerCorrect();
                 } else {
                     answerWrong();
                 }
             }
-        })
+        });
     }
 });
 
@@ -29,10 +29,10 @@ let timerStat = false;
  */
 function startGame() {
     timerStat = true;
-    showGamePanel() 
+    showGamePanel();
     runTimer();
     displayImg();
-};
+}
 
 /**
  * Function to display/hide the gaming panel
@@ -43,7 +43,7 @@ function hideGamePanel() {
   }
  function showGamePanel() {
     gamePanel.style.display = "block";
-    gameBtnHide()
+    gameBtnHide();
   }
 
   
@@ -122,7 +122,7 @@ let images = [
 function displayImg() {
     let dispImg = images[Math.floor(Math.random() * images.length)];
     document.getElementById("img-place").innerHTML = dispImg;
-};
+}
 
 /**
  * Obtain the correct answer for the question
@@ -130,8 +130,8 @@ function displayImg() {
 function isCorrect() {
     let currentImg = document.getElementById("img-place").children[0];
     let keytype = currentImg.getAttribute("data-type");
-    return keytype
-};
+    return keytype;
+}
 
 /**
  * Calling scoreUp and correctGreen then diplay random image 
@@ -155,7 +155,7 @@ function answerWrong() {
  */
 function scoreUp() {
     let oldtScore = parseInt(document.getElementById("corrent-score").innerText);
-    document.getElementById("corrent-score").innerText = ++oldtScore
+    document.getElementById("corrent-score").innerText = ++oldtScore;
 };
 
 /**
@@ -165,7 +165,7 @@ function correctGreen() {
     let correctSpan = document.getElementsByClassName("is-correct");
     correctSpan[0].classList.add("correct");
     setTimeout(function() { rmGreen(); }, 1000);
-};
+}
 
 /**
   * Remove inserted class to reset the correct text
