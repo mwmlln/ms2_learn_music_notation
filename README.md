@@ -2,8 +2,9 @@
 
 # Music Notation Game
 
+This site is created as a Milestone project for Code Institute's Software Development course.
 
-## The goal for this site
+## The Goal for this site
 Music Notation game is a site that hopes to help users learn to read very basic music notations while playing a game and having fun. 
 
 Ability to read music notations is a ley to play musical instrument but learing to read them can be boring and time consuming. This game hopes to make the process enjoyable.
@@ -99,7 +100,9 @@ Initial intention for the game was to have corresponding sound when the randomly
 This site was tested with number of ways to ensure the game function works and has clear procedure that is easy to understand for every user.
 
 
-Initial design on wireframe was to have all the components displayed all the time. This layout presented two major issues, one that pressing start button many times causing timer to display multiple countdown values, and other pressing alphabet key can gain points before starting a game.
+Initial design on wireframe was to have all the components displayed at all the time. This layout presented two major issues preventing game functions to work properly
+ 1. Pressing start buttons innumber of times triggered 
+ . and other pressing alphabet key can gain points before starting a game.
 These errors were rectified by hiding game panel until the game is started and hide the start button and replaced by small reset button once the game is started.
 
 ### Validating code
@@ -124,6 +127,9 @@ Following in the procedure taken to deploy this page.
 
 
 #### Coding
+
+Main approach for creating this game was taken from Code Institute's walk through project video of Love Maths.
+Among with other tutorial video and online books outside the course material to gain general knowlge of JavaScript I have used https://developer.mozilla.org/ and https://stackoverflow.com and google search for solutions to make this game work. In particular, below are the links that I used as a help for some of the functions to work.
 
 https://www.youtube.com/watch?v=AHh57PrdQsA  This YouTube tutorial has helped me to create the countdown timer.
 https://stackoverflow.com/  For using clearing inteinterval for the countdown Timer.
