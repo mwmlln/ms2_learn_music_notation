@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (this.getAttribute("data-type") === "game-stop") {
                 timerStat = false; 
             } else {
-                answer = isCorrect();
+                let answer = isCorrect();
                 if (this.getAttribute("data-type") === answer) {
                     answerCorrect();
                 } else {
@@ -72,7 +72,7 @@ function runTimer() {
         counter--;
 
         if (counter >= 0 && timerStat == true) {
-            timer = document.getElementById("game-timer");
+            let timer = document.getElementById("game-timer");
             timer.innerHTML = counter;
         } else {
             clearInterval(myTimer);
