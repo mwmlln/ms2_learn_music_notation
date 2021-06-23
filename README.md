@@ -30,26 +30,39 @@ This is the steps a user will take to play the game.
     ![How to Play](assets/images/readme_ss/howto_ss.jpg)
 
     2  Display popup window with all music notations used in the game and corresponding alphabet names by pressing HINT button located in the centre of the navigation bar. This HINT window can be accessed during the game if a user wants to see the image.
+
     ![Hint](assets/images/readme_ss/hint_window_ss.jpg)
 
     3   Press large play button to start the game. By pressing this button, the start button disappears and the gaming panel will display, allowing user to engage with the game.
     Following describe general game process once the start button is pressed.
     
       * Countdown timer will start counting down from 60 seconds.
+
       ![Countdown Timer](assets/images/readme_ss/timer_reset_ss.jpg)
-      * An image with one notation is displayed 
+
+      * An image with one notation is displayed. 
+
       ![Display area](assets/images/readme_ss/display_area_ss.jpg)
+
       * A user need to find a right alphabet for the notation image and press the corresponding key button under the image panel.
      
       * If the answer is correct, "Correct" word becomes green to notify the user. If the answer given is wrong, word "Wrong" will turn red for one second instead.
-       ![Corret or Wrong](assets/images/readme_ss/correct_wrong_ss.jpg)
+
+       ![Correct or Wrong](assets/images/readme_ss/correct_wrong_ss.jpg)
+
       * Another image will be displayed. A user will repeat the previous process and try to get as many correct answers to obtain points during 60 seconds.
-      Scores for current game and previous game are displayed just under the corret/Wrong Area
+      Scores for current game and previous game are displayed just under the corret/Wrong Area.
+
        ![score](assets/images/readme_ss/score_ss.jpg)
+
       * When the countdown timer turns zero, popup window is displayed to notify the user about the game completion with the final score.
+
       ![Game Over](assets/images/readme_ss/gameover_alert_ss.jpg)
+
       * The final score is recorded in the Last Score section so that a user can refer their previous score in the next game and try to get better score.
+
       * Once the user press OK button in the popup window, the timer and score are reset back to default value. Gaming panel disappears and large start button is present again, ready for another game.
+
       * A user can press reset button located beside timer during the game to cancel the game and return to start page.
 
 ## Features
@@ -64,6 +77,7 @@ Both pages have almost identical navigation bar and footer, with HINT button add
 
 ### Game page 
 
+The game page only displays title and large start button to make it clear what button needs to be pressed to start a game.
 
 ![Main game page](assets/images/readme_ss/index_opening_ss.jpg)
 
