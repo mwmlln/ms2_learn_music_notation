@@ -100,5 +100,7 @@ https://stackoverflow.com/  For using clearing interal for the countdown Timer.
 
 ### Media
 
+Color theme was choosen from this site https://coolors.co/cfcfea-a89b9d-816c61-575a4b-2a2c24
+
 ##### Music clef and notaion image  https://illustimage.com/
 
