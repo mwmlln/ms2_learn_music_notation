@@ -15,7 +15,7 @@ Ability to read music notations is a ley to play musical instrument but learing 
 
 ### **Target Audience**
 
-This game is created for anyone who wants to get familiar with music notations while they have fun playing game. The game has buttons inside the keyboard layout so users can get familiar with music notation name also positions of the key.
+This game is created for anyone who wants to get familiar with music notations while they have fun playing game. The game has buttons inside the keyboard layout so users can get familiar with music notation names also positions of the keys.
 
 ### **Project Goals**
 This site's goal is to make the process of learning to read music notation enjoyable.
@@ -27,18 +27,27 @@ This is the steps a user will take to play the game.
 *  After the page is loaded, a user has three main choices which are:
 
     1  Visit How To Play page by clicking the menu in the navigation bar.
+    ![How to Play](assets/images/readme_ss/howto_ss.jpg)
 
     2  Display popup window with all music notations used in the game and corresponding alphabet names by pressing HINT button located in the centre of the navigation bar. This HINT window can be accessed during the game if a user wants to see the image.
+    ![Hint](assets/images/readme_ss/hint_window_ss.jpg)
 
     3   Press large play button to start the game. By pressing this button, the start button disappears and the gaming panel will display, allowing user to engage with the game.
     Following describe general game process once the start button is pressed.
     
       * Countdown timer will start counting down from 60 seconds.
+      ![Countdown Timer](assets/images/readme_ss/timer_reset_ss.jpg)
       * An image with one notation is displayed 
-      * A user need to find a right alphabet for the notation image and press the corresponding key under the image panel.
+      ![Display area](assets/images/readme_ss/display_area_ss.jpg)
+      * A user need to find a right alphabet for the notation image and press the corresponding key button under the image panel.
+     
       * If the answer is correct, "Correct" word becomes green to notify the user. If the answer given is wrong, word "Wrong" will turn red for one second instead.
+       ![Corret or Wrong](assets/images/readme_ss/correct_wrong_ss.jpg)
       * Another image will be displayed. A user will repeat the previous process and try to get as many correct answers to obtain points during 60 seconds.
+      Scores for current game and previous game are displayed just under the corret/Wrong Area
+       ![score](assets/images/readme_ss/score_ss.jpg)
       * When the countdown timer turns zero, popup window is displayed to notify the user about the game completion with the final score.
+      ![Game Over](assets/images/readme_ss/gameover_alert_ss.jpg)
       * The final score is recorded in the Last Score section so that a user can refer their previous score in the next game and try to get better score.
       * Once the user press OK button in the popup window, the timer and score are reset back to default value. Gaming panel disappears and large start button is present again, ready for another game.
       * A user can press reset button located beside timer during the game to cancel the game and return to start page.
@@ -65,14 +74,16 @@ This big start button is the only thing a user can see in the main page body bes
 
 ### The Game Area
 
-It consists of image display area and key buttons. 
+It consists of image display area and buttons that are located in the layout of a keyboard. 
 Once the start button is random image of 1 note will be displayed from total of 7 images.
 7 buttons each have an alphabet for the image are located on the keyboard layout.
 A user will try to press the right key for the image displayed and increase their score.
 
 ![Main game page](assets/images/readme_ss/game_ss.jpg) 
 
-### The score Area
+
+
+### **The score Area**
 
 The score area displays the score for the current game, also the score from the last game so that a user can try to improve their skill in each game.
 
@@ -85,7 +96,7 @@ This window contains a image with all notaions and alphabets used for the game.
 
 ![nav bar ](assets/images/readme_ss/hint_window_ss.jpg)  
 
-### How to Play page
+### **How to Play page**
 This page is created to provide instructions on how to play the game.
 A user can read this page to understand how the game works prior to starting their game.
 
@@ -134,6 +145,10 @@ Among with other tutorial video and online books outside the course material to 
 https://www.youtube.com/watch?v=AHh57PrdQsA  This YouTube tutorial has helped me to create the countdown timer.
 https://stackoverflow.com/  For using clearing inteinterval for the countdown Timer.
 
+#### **Displaying ramdom image**
+   https://www.javatpoint.com/random-image-generator-in-javascript
+
+
 
 ### Content
 
@@ -143,3 +158,10 @@ Color theme was chosen from this site https://coolors.co/cfcfea-a89b9d-816c61-57
 
 Music clef and notaion image  https://illustimage.com/
 
+**Fonts**
+
+https://fonts.google.com/
+
+**Icons**
+
+https://fontawesome.com/
