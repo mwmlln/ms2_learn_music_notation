@@ -21,7 +21,7 @@ Ability to read music notations is a key to play musical instrument but learing 
 Contents:
 
 
-## User experience(UX)
+## **User experience(UX)**
 
 ### **Target Audience**
 
@@ -40,7 +40,7 @@ This game is created for anyone who wants to get familiar with music notations w
 *	Creating consistent design and easy navigate pages for any user without any confusing elements.
 *	Efforts to create code clearly so that further implementation would go smoothly.
 
-### User Stories
+### **User Stories**
 
 This site is created following user’s expectations in mind.
 
@@ -60,7 +60,7 @@ This site is created following user’s expectations in mind.
   * Ability to enjoy challenges so that a user can improve their skill and have fun at the same time.
   * Providing pleasant user experience to leave a positive impression about our site and the topic.
 
-### Scope
+### **Scope**
 The scope of Music Notation game defined by the following features:
 
  * Simple and clear index page.
@@ -70,7 +70,7 @@ The scope of Music Notation game defined by the following features:
  *	Quick access to HINT popup window.
  *	How To Play page for instruction on playing the game.
 
-### Structure
+### **Structure**
 
  * Navigation bar and footer are present on both pages for users navigate within the site
  * Upon loading a page Title and large start button present in display
@@ -81,28 +81,32 @@ The scope of Music Notation game defined by the following features:
  * HINT button located in the navigation bar in game page
  * Timer to notify the remaining seconds and RESET button to exit the game early.
 
-### Skeleton
+### **Skeleton**
 
 Initial design wirefame
 
 ![wireframe ](assets/wireframe/wireframe_all.jpg) 
 
-* Desktop
+* **Desktop**
 
-![wireframe Home PC ](assets/wireframe/wireframe_h.jpg) 
+<detail><summary>Desktop version of landing page</summary> <img src="assets/wireframe/wireframe_pc.jpg"></detail>
 
-![wireframe Howto PC](assets/wireframe/wireframe_pc_howto.jpg) 
+Initial design was to have all components displayed in the page.
+This approach turned out to be slightly confusing for users and caused game functions to produce unexpectd behaviours.
 
-
-* Mobile
-![wireframe Home PC ](assets/wireframe/wireframe_home_mobile.jpg) 
-
-![wireframe Home PC ](assets/wireframe/wireframe_howto_mobile.jpg) 
+<detail><summary>Desktop version of How To Play page</summary> <img src="assets/wireframe/wireframe_pc.jpg"></detail>
+Initial design on How To play page consisted of game instructions and image however, image was taken out as t felt unnessesary to be present in this page when users has access to it in the gaming page.
 
 
+* **Mobile**
+<detail><summary>Mobile version of landing page</summary> <img src="assets/wireframe/wireframe_home_mobile.jpg"></detail> 
 
 
-## Features
+<detail><summary>Mobile version of How To Play page</summary> <img src="assets/wireframe/assets/wireframe/wireframe_howto_mobile.jpg"></detail> 
+
+
+
+## **Features**
 
 The web page consists of two pages, one for playing the game and other for instruction on how to play the game.
 Both pages have almost identical navigation bar and footer, with HINT button added in the navigation bar only in the main gaming(index) page.
@@ -112,18 +116,18 @@ Both pages have almost identical navigation bar and footer, with HINT button add
 ![nav bar ](assets/images/readme_ss/footer_ss.jpg) 
 
 
-### Game page 
+### **Game page** 
 
 The game page only displays title and large start button to make it clear what button needs to be pressed to start a game.
 
 ![Main game page](assets/images/readme_ss/index_opening_ss.jpg)
 
-### Title and big start button.
+### **Title and big start button**
 
 This big start button is the only thing a user can see in the main page body besides title. This approach was taken so that the first action required to be taken is clear to the users. 
 
 
-### The Game Area
+### **The Game Area**
 
 It consists of image display area and buttons that are located in the layout of a keyboard. 
 Once the start button is random image of 1 note will be displayed from total of 7 images.
@@ -139,7 +143,7 @@ The score area displays the score for the current game, also the score from the 
 
 ![Main game page](assets/images/readme_ss/score_ss.jpg)  
 
-### **HINT** popup window
+### **HINT popup window**
 
 The button to display a popup window is located in the navigation bar in the gaming page.
 This window contains a image with all notaions and alphabets used for the game. 
@@ -157,6 +161,8 @@ A user can read this page to understand how the game works prior to starting the
 On opening the web site users are presented with a nav bar, a footer and main body with a title and large play button which will initiate a game. This approach was taken to avoid too many component presented at the first sight so that it will be clear what action need to be taken as a very first step to play the game.
 
 This is the steps a user will take to play the game.
+
+### **Game process**
 
 *  After the page is loaded, a user has three main choices which are:
 
@@ -182,7 +188,7 @@ This is the steps a user will take to play the game.
      
       * If the answer is correct, "Correct" word becomes green to notify the user. If the answer given is wrong, word "Wrong" will turn red for one second instead.
 
-       ![Correct or Wrong](assets/images/readme_ss/correct_wrong_ss.jpg)
+       ![Correct or Wrong](./assets/images/readme_ss/correct_wrong_ss.jpg)
 
       * Another image will be displayed. A user will repeat the previous process and try to get as many correct answers to obtain points during 60 seconds.
       Scores for current game and previous game are displayed just under the corret/Wrong Area.
@@ -201,21 +207,27 @@ This is the steps a user will take to play the game.
 
 #### Features Left to Implement
 
-Initial intention for the game was to have corresponding sound when the randomly selected image was displayed and also when a user pressed the alphabet button. However nature of the game being speedy, the solution to play audio consistently could not be implemented at this time.
+Initial intention for the game was to have corresponding sound when the randomly selected notation image was displayed and also when a user pressed the alphabet buttons. However the nature of the game being fast pace, playing audio consistently and each sound to be clearly identifiable turned out to be too difficult to inplemet at this stage.
+
+
 
 ## Testing
 
 This site was tested with number of ways to ensure the game function works and has clear procedure that is easy to understand for every user.
 
 
-Initial design on wireframe was to have all the components displayed at all the time. This layout presented two major issues preventing game functions to work properly
- 1. Pressing start buttons number of times triggered countdown timer to diplay multipule count down processes causing number displayed in the timer inconsistent.
+* Initial design on wireframe was to have all the components displayed at all the time. This layout presented two major issues preventing game functions to work properly
+  1. Pressing start buttons number of times triggered countdown timer to diplay multipule count down processes causing number displayed in the timer inconsistent.
  
- 2. Pressing alphabet key button before starting a gamecan gain points losing a point of having timer.
+  2. Pressing alphabet key button before starting a gamecan gain points losing a point of having timer.
 
-These errors were rectified by hiding game panel until the game is started and hide the start button and replaced by small reset button once the game is started.
+  These errors were rectified by hiding game panel until the game is started and the start button replaced by small reset button once the game is started. This approach was suggested by my mentor and it solved all the issues and improved the appearance and clearlity.
 
-When the reset button was implemented to give user an optoin to exit the game, the timer error ocurred same way start button was pressed more than once. This error was fixed by giving a timer status that was set on and off at appropriate stage in the process.
+* When the reset button was implemented to give user an optoin to exit the game early, the timer error ocurred same way the start button was pressed more than once. (i.e. user start a game then exit early by pressing button. Restarting game within 60 seconds, timer displayed two countdown process resolting the numbers displayed going up and down.)
+This error was fixed by giving a timer status of true of false which can controled in function at appropriate stage in the process and made timer to refer this status to allow continuation.
+
+* Each pages has been tested for responsiveness, making sure that the layout structure is kept intact on all devce sizes.
+CSS min-height and min-width was used for layout where view height and view width was used to ensure that the image or layout doesn't overflow.
 
 ### Validating code
 
@@ -240,11 +252,11 @@ Following in the procedure taken to deploy this page.
 5. Change the branch from None to Master.
 6. Website link is provided, copy the link and paste it onto link section in my repository page. This is the link to the published site[https://mwmlln.github.io/ms2_music_notation_game/]
 
-## Credits
+## **Credits**
 
 
 
-#### Coding
+#### **Coding**
 
 Main approach for creating this game was taken from Code Institute's walk through project video of Love Maths.
 Among with other tutorial video and online books outside the course material to gain general knowlge of JavaScript I have used https://developer.mozilla.org/ and https://stackoverflow.com and google search for solutions to make this game work. In particular, below are the links that I used as a help for some of the functions to work.
@@ -257,13 +269,15 @@ https://stackoverflow.com/  For using clearing inteinterval for the countdown Ti
 
 
 
-### Content
+### **Content**
 
-### Media
+### **Media**
 
 Color theme was chosen from this site https://coolors.co/cfcfea-a89b9d-816c61-575a4b-2a2c24
 
 Music clef and notaion image  https://illustimage.com/
+
+Screenshots and HINT page was created by Adobe Illustrator
 
 **Fonts**
 
@@ -272,3 +286,4 @@ https://fonts.google.com/
 **Icons**
 
 https://fontawesome.com/
+
