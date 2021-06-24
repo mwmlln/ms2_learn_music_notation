@@ -4,18 +4,102 @@
 
 This site is created as a Milestone project for Code Institute's Software Development course.
 
+Here is a link to the live project (https://mwmlln.github.io/ms2_music_notation_game/)
+
 ## The purpose for this site
 Music Notation game is a site that hopes to help users learn to read very basic music notations while playing a game and having fun. 
 
+The idea of the game came up when I learned that reading music notations is not included in school’s curriculum in every country and numbers of people do not have any idea how to read them.
+
 Ability to read music notations is a key to play musical instrument but learing to read them can be boring and time consuming. This game hopes to make the process enjoyable.
+
+
 
 ![Responsive Mockup](assets/images/readme_ss/responsive_ss.jpg)
 
-## UX
+
+Contents:
+
+
+## User experience(UX)
 
 ### **Target Audience**
 
 This game is created for anyone who wants to get familiar with music notations while they have fun playing game. The game has buttons inside the keyboard layout so users can get familiar with music notation names also positions of the keys.
+
+### **Strategy**
+
+#### **User goals**
+*	Get familiar with music notation
+*	Improve their ability to read music notations quickly 
+*	Enjoy playing a game
+
+#### **Site owner’s goal**
+
+*	Creating a simple game site anyone can enjoy and gain a skill to read basic music notations.
+*	Creating consistent design and easy navigate pages for any user without any confusing elements.
+*	Efforts to create code clearly so that further implementation would go smoothly.
+
+### User Stories
+
+This site is created following user’s expectations in mind.
+
+* First time user would like to:
+    * Have a clear instruction on what the game objective is and how to achieve it
+    * Have a clear choice of action presented to engage in the game (i.e. which buttons to press in order to achieve their goal
+    * Have a easy navigation within the site
+
+* Returning user would like to have following 
+   * An  ability to navigate the site easily
+   * Consistent page layout they can easily get familiar with
+   * Easy access to instructions on how to play the game to refresh their memory
+   * Ability to see their improvement as they return to the game
+
+* As a site creator I would like to provide:
+  * Interactive and educational site
+  * Ability to enjoy challenges so that a user can improve their skill and have fun at the same time.
+  * Providing pleasant user experience to leave a positive impression about our site and the topic.
+
+### Scope
+The scope of Music Notation game defined by the following features:
+
+ * Simple and clear index page.
+ * Functioning Game including clear feedback for user’s answer.
+ *	Responsive design that displays properly in all device sizes.
+ *	Easy to navigate pages with consistent navigation bar.
+ *	Quick access to HINT popup window.
+ *	How To Play page for instruction on playing the game.
+
+### Structure
+
+ * Navigation bar and footer are present on both pages for users navigate within the site
+ * Upon loading a page Title and large start button present in display
+ * Once the start button is pressed gaming panel is displayed and the game becomes accessible.
+ * Choose 1 of 7 buttons to press to answer
+ * Feedback is given for a user’s answer and score will update.
+ * Last score section to display the score from previous game.
+ * HINT button located in the navigation bar in game page
+ * Timer to notify the remaining seconds and RESET button to exit the game early.
+
+### Skeleton
+
+Initial design wirefame
+
+![wireframe ](assets/wireframe/wireframe_all.jpg) 
+
+* Desktop
+
+![wireframe Home PC ](assets/wireframe/wireframe_h.jpg) 
+
+![wireframe Howto PC](assets/wireframe/wireframe_pc_howto.jpg) 
+
+
+* Mobile
+![wireframe Home PC ](assets/wireframe/wireframe_home_mobile.jpg) 
+
+![wireframe Home PC ](assets/wireframe/wireframe_howto_mobile.jpg) 
+
+
 
 
 ## Features
