@@ -9,9 +9,9 @@ Here is a link to the live project (https://mwmlln.github.io/ms2_music_notation_
 ## The purpose for this site
 Music Notation game is a site that hopes to help users learn to read very basic music notations while playing a game and having fun. 
 
-The idea of the game came up when I learned that reading music notations is not included in school’s curriculum in every country and numbers of people do not have any idea how to read them.
+The idea of this game came up when I learned that reading music notations is not included in school’s curriculum in every country and numbers of people do not have any idea how to read them.
 
-Ability to read music notations is a key to play musical instrument but learing to read them can be boring and time consuming. This game hopes to make the process enjoyable.
+Ability to read music notations is often a key to play a musical instrument but learing to read them can be boring and time consuming. This game hopes to make the process enjoyable.
 
 
 
@@ -46,7 +46,7 @@ This site is created following user’s expectations in mind.
 
 * First time user would like to:
     * Have a clear instruction on what the game objective is and how to achieve it
-    * Have a clear choice of action presented to engage in the game (i.e. which buttons to press in order to achieve their goal
+    * Have a clear choice of action presented to engage in the game (i.e. which buttons to press in order to achieve their goal)
     * Have a easy navigation within the site
 
 * Returning user would like to have following 
@@ -72,11 +72,11 @@ The scope of Music Notation game defined by the following features:
 
 ### **Structure**
 
- * Navigation bar and footer are present on both pages for users navigate within the site
+ * Navigation bar and footer are present on both pages for users to navigate within the site
  * Upon loading a page Title and large start button present in display
  * Once the start button is pressed gaming panel is displayed and the game becomes accessible.
- * Choose 1 of 7 buttons to press to answer
- * Feedback is given for a user’s answer and score will update.
+ * Choose 1 of 7 buttons to press for answer
+ * Feedback is given to user’s answers and score will update.
  * Last score section to display the score from previous game.
  * HINT button located in the navigation bar in game page
  * Timer to notify the remaining seconds and RESET button to exit the game early.
@@ -93,9 +93,10 @@ Initial design wirefame
 
 Initial design was to have all components displayed in the page.
 This approach turned out to be slightly confusing for users and caused game functions to produce unexpectd behaviours.
+Another change was to move the How to Play into a independent page rather than popup window. This approach was taken to reduce too many components presents in one page that may confuse users.
 
 <detail><summary>Desktop version of How To Play page</summary> <img src="assets/wireframe/wireframe_pc.jpg"></detail>
-Initial design on How To play page consisted of game instructions and image however, image was taken out as t felt unnessesary to be present in this page when users has access to it in the gaming page.
+Initial design on How To play page consisted of game instructions and image, however the image was taken out as it seemed unnessesary to be present in this page when users have access to it in the gaming page.
 
 
 * **Mobile**
@@ -228,6 +229,7 @@ This error was fixed by giving a timer status of true of false which can control
 
 * Each pages has been tested for responsiveness, making sure that the layout structure is kept intact on all devce sizes.
 CSS min-height and min-width was used for layout where view height and view width was used to ensure that the image or layout doesn't overflow.
+The footer is set to stay on the bottom of the page for consistent appearance.
 
 ### Validating code
 
