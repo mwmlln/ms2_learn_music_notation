@@ -144,7 +144,6 @@ button {
     font-size: 0.6rem;
     display: inline;
     padding: 0;
-    color: var(--font-white);
 }
 
 /* For the timer */
