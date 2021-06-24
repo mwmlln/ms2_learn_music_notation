@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("data-type") === "game-start") {
                 startGame();
             } else if (this.getAttribute("data-type") === "game-stop") {
-                timerStat = false; 
+                timerStat = false;
             } else {
                 let answer = isCorrect();
                 if (this.getAttribute("data-type") === answer) {
@@ -21,8 +21,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-//setting timer status
+//Variable decrarations
 let timerStat = false;
+const gamePanel = document.getElementById("game-panel");
+const gameStartBtn = document.getElementsByClassName("game-start")[0];
+// Set the queastion images and answers
+let images = [
+    '<img src="assets/images/note_c.png"  data-type="c" alt="Music notation image" class="note-img">',
+    '<img src="assets/images/note_d.png"  data-type="d" alt="Music notation image" class="note-img">',
+    '<img src="assets/images/note_e.png"  data-type="e" alt="Music notation image" class="note-img">',
+    '<img src="assets/images/note_f.png"  data-type="f" alt="Music notation image" class="note-img">',
+    '<img src="assets/images/note_g.png"  data-type="g" alt="Music notation image" class="note-img">',
+    '<img src="assets/images/note_a.png"  data-type="a" alt="Music notation image" class="note-img">',
+    '<img src="assets/images/note_b.png"  data-type="b" alt="Music notation image" class="note-img">',
+];
 
 /**
  * function to start the process of the game
@@ -31,14 +43,12 @@ function startGame() {
     timerStat = true;
     showGamePanel();
     runTimer();
-    displayImg();
+    displayImage();
 }
 
 /**
  * Function to display/hide the gaming panel
  */
-const gamePanel = document.getElementById("game-panel");
-
 function hideGamePanel() {
     gamePanel.style.display = "none";
 }
@@ -50,9 +60,6 @@ function showGamePanel() {
 
 
 //  Toggle display of start button.
-
-const gameStartBtn = document.getElementsByClassName("game-start")[0];
-
 function gameBtnHide() {
     gameStartBtn.style.display = "none";
 }
@@ -60,8 +67,6 @@ function gameBtnHide() {
 function startBtnShow() {
     gameStartBtn.style.display = "inline-block";
 }
-
-
 
 /**
  * Run countdown Timer for a game duration of 60seconds
@@ -95,74 +100,63 @@ function gameOver() {
     hideGamePanel();
 }
 
-// Set the queastion images and answers
-let images = [
-    '<img src="assets/images/note_c.png"  data-type="c" alt="Music notation image" class="note-img">',
-    '<img src="assets/images/note_d.png"  data-type="d" alt="Music notation image" class="note-img">',
-    '<img src="assets/images/note_e.png"  data-type="e" alt="Music notation image" class="note-img">',
-    '<img src="assets/images/note_f.png"  data-type="f" alt="Music notation image" class="note-img">',
-    '<img src="assets/images/note_g.png"  data-type="g" alt="Music notation image" class="note-img">',
-    '<img src="assets/images/note_a.png"  data-type="a" alt="Music notation image" class="note-img">',
-    '<img src="assets/images/note_b.png"  data-type="b" alt="Music notation image" class="note-img">',
-];
-
 /**
  * Display random selection of the image 
  */
-function displayImg() {
-    let dispImg = images[Math.floor(Math.random() * images.length)];
-    document.getElementById("img-place").innerHTML = dispImg;
+function displayImage() {
+    let randomImage = images[Math.floor(Math.random() * images.length)];
+    document.getElementById("img-place").innerHTML = randomImage;
 }
 
 /**
  * Obtain the correct answer for the question
  */
 function isCorrect() {
-    let currentImg = document.getElementById("img-place").children[0];
-    let keytype = currentImg.getAttribute("data-type");
+    let currentImage = document.getElementById("img-place").children[0];
+    let keytype = currentImage.getAttribute("data-type");
     return keytype;
 }
 
 /**
- * Calling scoreUp and correctGreen then diplay random image 
+ * Calling scoreUp and greenText then diplay random image 
  */
 function answerCorrect() {
     scoreUp();
-    correctGreen();
-    displayImg();
+    greenText();
+    displayImage();
 }
 
 /**
  * Calling class to turn text red for Wrong and display new image
  */
 function answerWrong() {
-    wrongRed();
-    displayImg();
+    redText();
+    displayImage();
 }
 
 /**
  * Get the current score from DOM and increase it by one
  */
 function scoreUp() {
-    let oldtScore = parseInt(document.getElementById("corrent-score").innerText);
-    document.getElementById("corrent-score").innerText = ++oldtScore;
+    let oldScore = parseInt(document.getElementById("corrent-score").innerText);
+    document.getElementById("corrent-score").innerText = ++oldScore;
 };
 
 /**
  * Insert class to turn the text for correct green
  */
-function correctGreen() {
+function greenText() {
     let correctSpan = document.getElementsByClassName("is-correct");
     correctSpan[0].classList.add("correct");
     setTimeout(function () {
-        rmGreen();
+        removeGreen();
     }, 1000);
 }
 
 /**
  * Remove inserted class to reset the correct text
  */
-function rmGreen() {
+function removeGreen() {
     let correctSpan = document.getElementsByClassName("is-correct");
     correctSpan[0].classList.remove("correct");
 }
@@ -170,11 +164,11 @@ function rmGreen() {
 /**
  * Insert class to turn the text for wrong red
  */
-function wrongRed() {
+function redText() {
     let correctSpan = document.getElementsByClassName("is-correct");
     correctSpan[1].classList.add("wrong");
     setTimeout(function () {
-        rmRed();
+        removeRed();
     }, 1000);
 }
 
@@ -182,7 +176,7 @@ function wrongRed() {
 /**
  * Remove inserted class to reset the wrong text
  */
-function rmRed() {
+function removeRed() {
     let wrongSpan = document.getElementsByClassName("is-correct");
     wrongSpan[1].classList.remove("wrong");
 }
