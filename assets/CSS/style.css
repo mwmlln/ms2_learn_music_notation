@@ -134,13 +134,17 @@ button {
 /* For hint button in the nav bar */
 .hint {
     height: fit-content;
-    padding: 0 5px;
+    margin-top: 0;
+    color: var(--font-white);
+    background-color: var(--nav-color);
 }
 
 .hint::after {
     content: "HINT";
     font-size: 0.6rem;
-    display: flex;
+    display: inline;
+    padding: 0;
+    color: var(--font-white);
 }
 
 /* For the timer */

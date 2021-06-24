@@ -266,12 +266,14 @@ Among with other tutorial video and online books outside the course material to 
 https://www.youtube.com/watch?v=AHh57PrdQsA  This YouTube tutorial has helped me to create the countdown timer.
 https://stackoverflow.com/  For using clearing inteinterval for the countdown Timer.
 
+https://www.educba.com/css-blinking-text/   For blinking start button
+
+CSS in easy steps (book) by Mike Macgrath   For general CSS coding reference
+
 #### **Displaying ramdom image**
    https://www.javatpoint.com/random-image-generator-in-javascript
 
 
-
-### **Content**
 
 ### **Media**
 
