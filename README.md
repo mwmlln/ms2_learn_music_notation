@@ -2,6 +2,40 @@
 
 # Music Notation Game
 
+- [Music Notation Game](#music-notation-game)
+  * [The purpose for this site](#the-purpose-for-this-site)
+  * [**User experience(UX)**](#--user-experience-ux---)
+    + [**Target Audience**](#--target-audience--)
+    + [**Strategy**](#--strategy--)
+      - [**User goals**](#--user-goals--)
+      - [**Site owner’s goal**](#--site-owner-s-goal--)
+    + [**User Stories**](#--user-stories--)
+    + [**Scope**](#--scope--)
+    + [**Structure**](#--structure--)
+    + [**Skeleton**](#--skeleton--)
+  * [**Features**](#--features--)
+    + [**Game page**](#--game-page--)
+    + [**Title and big start button**](#--title-and-big-start-button--)
+    + [**The Game Area**](#--the-game-area--)
+    + [**The Score Area**](#--the-score-area--)
+    + [**HINT popup window**](#--hint-popup-window--)
+    + [**How to Play page**](#--how-to-play-page--)
+    + [**How the game is played**](#--how-the-game-is-played--)
+    + [**Game process**](#--game-process--)
+      - [Features Left to Implement](#features-left-to-implement)
+  * [Technologies](#technologies)
+    + [Languages](#languages)
+    + [Other Technologies, Frameworks & Libraries](#other-technologies--frameworks---libraries)
+  * [Testing](#testing)
+    + [Validating code](#validating-code)
+  * [Deployment](#deployment)
+  * [**Credits**](#--credits--)
+      - [**Coding**](#--coding--)
+    + [**Media**](#--media--)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 This site is created as a Milestone project for Code Institute's Software Development course.
 
 Here is a link to the live project: [Music Notaion game](https://mwmlln.github.io/ms2_music_notation_game/)
@@ -220,6 +254,22 @@ This is the steps a user will take to play the game.
 The initial intention for the game was to have corresponding sounds when the randomly selected notation image was displayed and also when a user pressed the alphabet buttons. However the nature of the game being fast paced, playing audio consistently and each sound to be clearly identifiable turned out to be too difficult to implemet at this stage due to short space of time given to complete the project.
 
 
+## Technologies
+
+### Languages 
+
+ * HTML5
+ * CSS3
+ * JavaScript
+
+### Other Technologies, Frameworks & Libraries
+
+ * Google Fonts
+ * Bootstrap v5.0
+ * Font Awsome
+ * GitHub and Gitpod
+ * Balsamic
+ 
 ## Testing
 
 This site was tested with number of ways to ensure the game function works as intended and has a clear procedure that is easy to understand for every user.
@@ -246,9 +296,14 @@ The footer is set to stay on the bottom of the page for consistent appearance.
 
 No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmwmlln.github.io%2Fms2_music_notation_game%2F)
 
+<details><summary>Result screenshot</summary> <img src="assets/images/readme_ss/html_validator_result.jpg"></details> 
+
 No errors were found when passing through the official (Jigsaw) validator [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmwmlln.github.io%2Fms2_music_notation_game%2Fassets%2FCSS%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-No major issues were returned by https://jshint.com/
+<details><summary>Result screenshot</summary> <img src="assets/images/readme_ss/css_validator_result.jpg"></details>
+
+
+No major issues or errors were returned by [JSHint](https://jshint.com/)
   The following metrics were returned:
    *  There are 21 functions in this file.
    *  Function with the largest signature take 0 arguments, while the median is 0.
@@ -263,42 +318,41 @@ Following in the procedure taken to deploy this page.
 3. Open setting page within the repository.
 4. Navigate to the page tab
 5. Change the branch from None to Master.
-6. Website link is provided, copy the link and paste it onto link section in my repository page. This is the link to the published site[https://mwmlln.github.io/ms2_music_notation_game/]
+6. Website link is provided, copy the link and paste it onto link section in my repository page. This is the link to the published site,  [Music Notaion Game](https://mwmlln.github.io/ms2_music_notation_game/)
 
 ## **Credits**
-
-
 
 #### **Coding**
 
 Main approach for creating this game was taken from Code Institute's walk through project video of Love Maths.
-Among with other tutorial videos and online books outside the course material to gain general knowlge of JavaScript I have used https://developer.mozilla.org/ and https://stackoverflow.com and google search for solutions to make this game work. In particular, below are the links that I used as a help for some of the functions to work.
+Among with other tutorial videos and online books outside the course material to gain general knowlge of JavaScript I have used [Mozilla](https://developer.mozilla.org/) and [Stackoverflow](https://stackoverflow.com) and google search for solutions to make this game work. In particular, below are the links that I used as a help for some of the functions to work.
 
-https://www.youtube.com/watch?v=AHh57PrdQsA  This YouTube tutorial has helped me to create the countdown timer.
-https://stackoverflow.com/  For using clearing inteinterval for the countdown Timer.
-
-https://www.educba.com/css-blinking-text/   For blinking start button
-
-CSS in easy steps (book) by Mike Macgrath   For general CSS coding reference
-
-#### **Displaying ramdom image**
-   https://www.javatpoint.com/random-image-generator-in-javascript
+* This YouTube tutorial has helped me to create the countdown timer.
+https://www.youtube.com/watch?v=AHh57PrdQsA  
+* For using clearing inteinterval for the countdown Timer.
+https://stackoverflow.com/  
+ * For blinking start button
+https://www.educba.com/css-blinking-text/   
 
 
+* Displaying ramdom image**
+  https://www.javatpoint.com/random-image-generator-in-javascript
+
+* CSS in easy steps (book) by Mike Macgrath   For general CSS coding reference
 
 ### **Media**
 
-Color theme was chosen from this site https://coolors.co/cfcfea-a89b9d-816c61-575a4b-2a2c24
+* Color theme was chosen from this site https://coolors.co/cfcfea-a89b9d-816c61-575a4b-2a2c24
 
-Music clef and notaion image  https://illustimage.com/
+* Music clef and notaion image  https://illustimage.com/
 
-Screenshots and HINT page was created by Adobe Illustrator
+* Screenshots and the imgae in HINT page was created by Adobe Illustrator
 
 **Fonts**
 
-https://fonts.google.com/
+ * https://fonts.google.com/
 
 **Icons**
 
-https://fontawesome.com/
+ * https://fontawesome.com/
 
