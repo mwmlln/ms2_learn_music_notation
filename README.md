@@ -41,6 +41,7 @@ This site is created as a Milestone project for Code Institute's Software Develo
 
 Here is a link to the live project: [Music Notaion game](https://mwmlln.github.io/ms2_music_notation_game/)
 
+
 ## **The purpose for this site**
 ---
 Music Notation game is a site that hopes to help users learn to read very basic music notations while playing a game and having fun. 
@@ -259,16 +260,16 @@ This is the steps a user will take to play the game.
 The initial intention for the game was to have corresponding sounds when the randomly selected notation image was displayed and also when a user pressed the alphabet buttons. However the nature of the game being fast paced, playing audio consistently and each sound to be clearly identifiable turned out to be too difficult to implemet at this stage due to short space of time given to complete the project.
 
 
-## Technologies
+## **Technologies**
 --- 
 
-### Languages 
+### **Languages**
 
  * HTML5
  * CSS3
  * JavaScript
 
-### Other Technologies, Frameworks & Libraries
+### **Other Technologies, Frameworks & Libraries**
 
  * Google Fonts
  * Bootstrap v5.0
@@ -276,7 +277,7 @@ The initial intention for the game was to have corresponding sounds when the ran
  * GitHub and Gitpod
  * Balsamic
  
-## Testing
+## **Testing**
 --- 
 
 This site was tested with number of ways to ensure the game function works as intended and has a clear procedure that is easy to understand for every user.
@@ -299,7 +300,7 @@ This error was fixed by giving the timer a status of true or false and for it to
 CSS min-height and min-width was used for layout where view height and view width was set to ensure that the image or layout doesn't overflow.
 The footer is set to stay on the bottom of the page for consistent appearance.
 
-### Validating code
+### **Validating code**
 
 No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmwmlln.github.io%2Fms2_music_notation_game%2F)
 
@@ -317,7 +318,7 @@ No major issues or errors were returned by [JSHint](https://jshint.com/)
    *  Largest function has 8 statements in it, while the median is 2.
    *  The most complex function has a cyclomatic complexity value of 4 while the median is 1.
 
-## Deployment
+## **Deployment**
 --- 
 This site was published in GitHub.
 Following in the procedure taken to deploy this page.
