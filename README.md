@@ -2,7 +2,7 @@
 
 # Music Notation Game
 
-- [Music Notation Game](#music-notation-game)
+- [Table of Contents](#music-notation-game)
   * [The purpose for this site](#the-purpose-for-this-site)
   * [**User experience(UX)**](#--user-experience-ux---)
     + [**Target Audience**](#--target-audience--)
@@ -36,11 +36,13 @@
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
+
 This site is created as a Milestone project for Code Institute's Software Development course.
 
 Here is a link to the live project: [Music Notaion game](https://mwmlln.github.io/ms2_music_notation_game/)
 
-## The purpose for this site
+## **The purpose for this site**
+---
 Music Notation game is a site that hopes to help users learn to read very basic music notations while playing a game and having fun. 
 
 The idea of this game came up when I learned that reading music notations is not included in school’s curriculum in Ireland and numerous of people do not have any idea how to read them.
@@ -56,12 +58,14 @@ Contents:
 
 
 ## **User experience(UX)**
+---
 
 ### **Target Audience**
 
 This game is created for anyone who wants to get familiar with music notations whilst having fun playing game. The game has buttons inside the keyboard layout so users can get familiar with music notation names, also positions of the keys.
 
 ### **Strategy**
+---
 
 #### **User goals**
 *	Get familiar with music notation
@@ -146,6 +150,7 @@ Initial design of How To play page consisted of game instructions and an image, 
 Mobile version has taken the same modification of PC version to UI, reducing popup window and having How To Play in another independent page.
 
 ## **Features**
+---
 
 The web page consists of two pages, one for playing the game and the other for instruction on how to play the game.
 Both pages have almost identical navigation bar and footer, with HINT button added in the navigation bar only in the main gaming(index) page.
@@ -255,6 +260,7 @@ The initial intention for the game was to have corresponding sounds when the ran
 
 
 ## Technologies
+--- 
 
 ### Languages 
 
@@ -271,6 +277,7 @@ The initial intention for the game was to have corresponding sounds when the ran
  * Balsamic
  
 ## Testing
+--- 
 
 This site was tested with number of ways to ensure the game function works as intended and has a clear procedure that is easy to understand for every user.
 
@@ -311,6 +318,7 @@ No major issues or errors were returned by [JSHint](https://jshint.com/)
    *  The most complex function has a cyclomatic complexity value of 4 while the median is 1.
 
 ## Deployment
+--- 
 This site was published in GitHub.
 Following in the procedure taken to deploy this page.
 1. Log in to GitHub
@@ -321,6 +329,7 @@ Following in the procedure taken to deploy this page.
 6. Website link is provided, copy the link and paste it onto link section in my repository page. This is the link to the published site,  [Music Notaion Game](https://mwmlln.github.io/ms2_music_notation_game/)
 
 ## **Credits**
+--- 
 
 #### **Coding**
 
