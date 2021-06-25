@@ -1,10 +1,10 @@
-![CI logo](favicon.ico)
+![Music logo](favicon.ico)
 
 # Music Notation Game
 
 This site is created as a Milestone project for Code Institute's Software Development course.
 
-Here is a link to the live project (https://mwmlln.github.io/ms2_music_notation_game/)
+Here is a link to the live project: [Music Notaion game](https://mwmlln.github.io/ms2_music_notation_game/)
 
 ## The purpose for this site
 Music Notation game is a site that hopes to help users learn to read very basic music notations while playing a game and having fun. 
@@ -36,20 +36,24 @@ This game is created for anyone who wants to get familiar with music notations w
 
 #### **Site owner’s goal**
 
+The main objective for creating this site was to gain skill set to build a presentable and interactive web site. To achieve it following considerations are taken:
+
 *	Creating a simple game site anyone can enjoy and gain a skill to read basic music notations.
 *	Creating consistent design and easy navigate pages for any user without any confusing elements.
 *	Efforts to create code clearly so that further implementation would go smoothly.
+
 
 ### **User Stories**
 
 This site is created following user’s expectations in mind.
 
-* First time user would like to:
+* A first time user would like to:
     * Have a clear instruction on what the game objective is and how to achieve it
+    * Easy access to instructions on how to play the game
     * Have a clear choice of action presented to engage in the game (i.e. which buttons to press in order to achieve their goal)
     * Have a easy navigation within the site
 
-* Returning user would like to have following 
+* A returning user would like to have following 
    * An  ability to navigate the site easily
    * Consistent page layout they can easily get familiar with
    * Easy access to instructions on how to play the game to refresh their memory
@@ -63,8 +67,8 @@ This site is created following user’s expectations in mind.
 ### **Scope**
 The scope of Music Notation game defined by the following features:
 
- * Simple and clear index page.
- * Functioning Game including clear feedback for user’s answer.
+ * Simple and clear opening page.
+ * Functioning game including clear feedback for user’s answer.
  *	Responsive design that displays properly in all device sizes.
  *	Easy to navigate pages with consistent navigation bar.
  *	Quick access to HINT popup window.
@@ -73,7 +77,7 @@ The scope of Music Notation game defined by the following features:
 ### **Structure**
 
  * Navigation bar and footer are present on both pages for users to navigate within the site
- * Upon loading a page Title and large start button present in display
+ * On the opening page Title and large start button present in display
  * Once the start button is pressed gaming panel is displayed and the game becomes accessible.
  * Choose 1 of 7 buttons to press for answer
  * Feedback is given to user’s answers and score will update.
@@ -89,77 +93,80 @@ Initial design wirefame
 
 * **Desktop**
 
-<detail><summary>Desktop version of landing page</summary> <img src="assets/wireframe/wireframe_pc.jpg"></detail>
+<details><summary>Desktop version of landing page</summary> <img src="assets/wireframe/wireframe_pc.jpg"></details>
 
-Initial design was to have all components displayed in the page.
+Initial design was to have all components displayed in one page.
 This approach turned out to be slightly confusing for users and caused game functions to produce unexpectd behaviours.
-Another change was to move the How to Play into a independent page rather than popup window. This approach was taken to reduce too many components presents in one page that may confuse users.
+To make gaming page simple, a decision was taken to move the How to Play into another page rather than popup window. This approach was taken to reduce too many components presents in one page that may confuse users.
+HINT button was moved into the nave bar for easier access.
 
-<detail><summary>Desktop version of How To Play page</summary> <img src="assets/wireframe/wireframe_pc.jpg"></detail>
-Initial design on How To play page consisted of game instructions and image, however the image was taken out as it seemed unnessesary to be present in this page when users have access to it in the gaming page.
+<details><summary> Implemented Desktop version of How To Play page</summary> <img src="assets/images/readme_ss/howto_ss.jpg"></details>
+
+Initial design on How To play page consisted of game instructions and image, however the image was taken out as it seemed unnessesary to be present in this page when users have easy access to it in the gaming page.
 
 
 * **Mobile**
-<detail><summary>Mobile version of landing page</summary> <img src="assets/wireframe/wireframe_home_mobile.jpg"></detail> 
 
+<details><summary>Mobile version of landing page</summary> <img src="assets/wireframe/wireframe_home_mobile.jpg"></details>
 
-<detail><summary>Mobile version of How To Play page</summary> <img src="assets/wireframe/assets/wireframe/wireframe_howto_mobile.jpg"></detail> 
-
-
+Mobile version has taken the same modification of PC version to UI, reducing popup window and having How To Play in another independent page.
 
 ## **Features**
 
 The web page consists of two pages, one for playing the game and other for instruction on how to play the game.
 Both pages have almost identical navigation bar and footer, with HINT button added in the navigation bar only in the main gaming(index) page.
 
-![nav bar ](assets/images/readme_ss/nav_ss.jpg) 
-
-![nav bar ](assets/images/readme_ss/footer_ss.jpg) 
+<details><summary>Navigation bar</summary> <img src="assets/images/readme_ss/nav_ss.jpg"></details>
+<details><summary>Footer</summary> <img src="assets/images/readme_ss/footer_ss.jpg"></details>
 
 
 ### **Game page** 
 
 The game page only displays title and large start button to make it clear what button needs to be pressed to start a game.
 
-![Main game page](assets/images/readme_ss/index_opening_ss.jpg)
+<details><summary>Main game page</summary> <img src="assets/images/readme_ss/index_opening_ss.jpg"></details>
 
 ### **Title and big start button**
 
-This big start button is the only thing a user can see in the main page body besides title. This approach was taken so that the first action required to be taken is clear to the users. 
-
+A big start button is the only thing a user can see in the main page body besides title. This approach was taken to make it simple and clear what the fist step is to play the game. 
 
 ### **The Game Area**
 
-It consists of image display area and buttons that are located in the layout of a keyboard. 
-Once the start button is random image of 1 note will be displayed from total of 7 images.
-7 buttons each have an alphabet for the image are located on the keyboard layout.
-A user will try to press the right key for the image displayed and increase their score.
+It consists of Timer, reset button, image display area and buttons that are located in the layout of a keyboard. 
+Once the start button is pressed a random image of 1 note will be displayed from total of 7 images.
+There are 7 buttons below the image, each have an alphabet for Notaion name.
+A user will try to press the right key(i.e Notaion name alphabet) for the note image displayed. Upon the right answer to increase their score.
 
-![Main game page](assets/images/readme_ss/game_ss.jpg) 
+<details><summary>Main game panel</summary> <img src="assets/images/readme_ss/game_ss.jpg"></details>
 
 
 ### **The score Area**
 
-The score area displays the score for the current game, also the score from the last game so that a user can try to improve their skill in each game.
+Each time a user gets a correct answer, the score will increment by 1.  The score area displays the score for the current game on the left side.
+On the right side, the score from the last game is displayed to remind the user so that the user can try to improve their skill in each game.
 
-![Main game page](assets/images/readme_ss/score_ss.jpg)  
+<details><summary>Score Area</summary> <img src="assets/images/readme_ss/score_ss.jpg"></details>
+
 
 ### **HINT popup window**
 
 The button to display a popup window is located in the navigation bar in the gaming page.
 This window contains a image with all notaions and alphabets used for the game. 
+Bootstrap modal is used to diplay this window.
 
-![nav bar ](assets/images/readme_ss/hint_window_ss.jpg)  
+<details><summary>Hint popup window</summary> <img src="assets/images/readme_ss/hint_window_ss.jpg"></details>
+  
 
 ### **How to Play page**
 This page is created to provide instructions on how to play the game.
 A user can read this page to understand how the game works prior to starting their game.
 
-![How To Play Page](assets/images/readme_ss/howto_ss.jpg)  
+<details><summary>How To Play Page</summary> <img src="assets/images/readme_ss/howto_ss.jpg"></details> 
+
 
 ### **How the game is played**
 
-On opening the web site users are presented with a nav bar, a footer and main body with a title and large play button which will initiate a game. This approach was taken to avoid too many component presented at the first sight so that it will be clear what action need to be taken as a very first step to play the game.
+On opening the web site users are presented with a nav bar, a footer and main body with a title and large play button which will initiate a game. 
 
 This is the steps a user will take to play the game.
 
@@ -168,64 +175,68 @@ This is the steps a user will take to play the game.
 *  After the page is loaded, a user has three main choices which are:
 
     1  Visit How To Play page by clicking the menu in the navigation bar.
-    ![How to Play](assets/images/readme_ss/howto_ss.jpg)
+    <details><summary>How To Play Page</summary> <img src="assets/images/readme_ss/howto_ss.jpg"></details>
 
     2  Display popup window with all music notations used in the game and corresponding alphabet names by pressing HINT button located in the centre of the navigation bar. This HINT window can be accessed during the game if a user wants to see the image.
 
-    ![Hint](assets/images/readme_ss/hint_window_ss.jpg)
+    <details><summary>Hint popup window</summary> <img src="assets/images/readme_ss/hint_window_ss.jpg"></details>
 
     3   Press large play button to start the game. By pressing this button, the start button disappears and the gaming panel will display, allowing user to engage with the game.
     Following describe general game process once the start button is pressed.
     
       * Countdown timer will start counting down from 60 seconds.
 
-      ![Countdown Timer](assets/images/readme_ss/timer_reset_ss.jpg)
+          <details><summary>Countdown Timer</summary> <img src="assets/images/readme_ss/timer_reset_ss.jpg"></details>
 
-      * An image with one notation is displayed. 
+      * An image with one notation is displayed.            
 
-      ![Display area](assets/images/readme_ss/display_area_ss.jpg)
+        <details><summary>Notation image diplay</summary> <img src="assets/images/readme_ss/display_area_ss.jpg"></details>  
 
-      * A user need to find a right alphabet for the notation image and press the corresponding key button under the image panel.
+      * A user need to find a right alphabet for the notation image and press the corresponding key button under the image panel.  
+    
+        <details><summary>Keyboard buttons</summary> <img src="assets/images/readme_ss/keyboard_button_ss.jpg"></details>
      
-      * If the answer is correct, "Correct" word becomes green to notify the user. If the answer given is wrong, word "Wrong" will turn red for one second instead.
+      * If the answer is correct, "Correct" word becomes green for one second to notify the user. If the answer given is wrong, word "Wrong" will turn red instead.
+        <details><summary>Correct or Wrong</summary> <img src="assets/images/readme_ss/correct_wrong_ss.jpg"></details>  
 
-       ![Correct or Wrong](./assets/images/readme_ss/correct_wrong_ss.jpg)
+      * Score will also go up by 1 when the answer is correct.    
+    
 
-      * Another image will be displayed. A user will repeat the previous process and try to get as many correct answers to obtain points during 60 seconds.
+      * Another image will be displayed. A user will repeat the previous process and try to get as many correct answers to obtain high score during 60 seconds.
       Scores for current game and previous game are displayed just under the corret/Wrong Area.
-
-       ![score](assets/images/readme_ss/score_ss.jpg)
-
+        <details><summary>score</summary> <img src="assets/images/readme_ss/score_ss.jpg"></details>   
+       
       * When the countdown timer turns zero, popup window is displayed to notify the user about the game completion with the final score.
+        <details><summary>Game Over popup window</summary> <img src="assets/images/readme_ss/gameover_alert_ss.jpg"></details>         
 
-      ![Game Over](assets/images/readme_ss/gameover_alert_ss.jpg)
+      * The final score is recorded in the Last Score section so that a user can refer their previous score in the next game and try to improve their skill.
 
-      * The final score is recorded in the Last Score section so that a user can refer their previous score in the next game and try to get better score.
+      * Once the user press OK button in the Game over popup window, the timer and score are reset back to default value. Gaming panel disappears and large start button is present again, ready for another game.
 
-      * Once the user press OK button in the popup window, the timer and score are reset back to default value. Gaming panel disappears and large start button is present again, ready for another game.
-
-      * A user can press reset button located beside timer during the game to cancel the game and return to start page.
+      * A user can press reset button located beside timer, during the game to cancel the game and return to start page.
 
 #### Features Left to Implement
 
-Initial intention for the game was to have corresponding sound when the randomly selected notation image was displayed and also when a user pressed the alphabet buttons. However the nature of the game being fast pace, playing audio consistently and each sound to be clearly identifiable turned out to be too difficult to inplemet at this stage.
-
+Initial intention for the game was to have corresponding sound when the randomly selected notation image was displayed and also when a user pressed the alphabet buttons. However the nature of the game being fast pace, playing audio consistently and each sound to be clearly identifiable turned out to be too difficult to implemet at this stage due to short space of time given to complete the project.
 
 
 ## Testing
 
-This site was tested with number of ways to ensure the game function works and has clear procedure that is easy to understand for every user.
+This site was tested with number of ways to ensure the game function works as intended and has clear procedure that is easy to understand for every user.
 
+Through out the development phase, code was tested line by line where possible, using chrome developper tool. This is to ensure that the returned value from each function matches to the value expected. This approach was taken so that any small errors in one function does not cause bigger problems in the whole project. This approach also brought me some small comfort when function behaved as expected during rathter overwhelming project for a novice coder.
+
+Below are some challenges during the development and tesing phase.
 
 * Initial design on wireframe was to have all the components displayed at all the time. This layout presented two major issues preventing game functions to work properly
   1. Pressing start buttons number of times triggered countdown timer to diplay multipule count down processes causing number displayed in the timer inconsistent.
  
-  2. Pressing alphabet key button before starting a gamecan gain points losing a point of having timer.
+  2. Pressing alphabet key button for answer before start button is pressed can increase score without timer and other functions starting.
 
-  These errors were rectified by hiding game panel until the game is started and the start button replaced by small reset button once the game is started. This approach was suggested by my mentor and it solved all the issues and improved the appearance and clearlity.
+  These errors were rectified by hiding game panel until the game is started and the start button replaced by small reset button once the game is started. This approach was suggested by my mentor and it solved above issues and improved the site's appearance and clearlity.
 
-* When the reset button was implemented to give user an optoin to exit the game early, the timer error ocurred same way the start button was pressed more than once. (i.e. user start a game then exit early by pressing button. Restarting game within 60 seconds, timer displayed two countdown process resolting the numbers displayed going up and down.)
-This error was fixed by giving a timer status of true of false which can controled in function at appropriate stage in the process and made timer to refer this status to allow continuation.
+* When the reset button was implemented to give user an optoin to exit the game early, the timer error ocurred same way the start button was pressed more than once. (i.e. user start a game then exit early by pressing button. Restarting game within 60 seconds, the timer displayed two countdown process resulting the numbers displayed going up and down.)
+This error was fixed by giving timer a status of true or false and timer to refer this status in oder to continue the process. 
 
 * Each pages has been tested for responsiveness, making sure that the layout structure is kept intact on all devce sizes.
 CSS min-height and min-width was used for layout where view height and view width was used to ensure that the image or layout doesn't overflow.
