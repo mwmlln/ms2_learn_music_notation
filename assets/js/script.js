@@ -1,6 +1,6 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
-
+// The main approach of this Eventlistner was taken from Code Institute's Love Maths walk though video.
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByClassName('game-btn');
     for (let button of buttons) {
@@ -68,6 +68,8 @@ function startBtnShow() {
     gameStartBtn.style.display = "inline-block";
 }
 
+
+// Basic structure of this timer function was created by following this Video tutorial https://www.youtube.com/watch?v=AHh57PrdQsA  
 /**
  * Run countdown Timer for a game duration of 60seconds
  */
