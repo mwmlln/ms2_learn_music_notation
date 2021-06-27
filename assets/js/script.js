@@ -12,9 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 let answer = isCorrect();
                 if (this.getAttribute("data-type") === answer) {
+                    this.style.background = "green";                 
                     answerCorrect();
+                    setTimeout(() => { this.style.background = "grey"; }, 1000);
                 } else {
+                    this.style.background = "red";
                     answerWrong();
+                    setTimeout(() => { this.style.background = "grey"; }, 1000);
                 }
             }
         });
@@ -25,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 let timerStat = false;
 const gamePanel = document.getElementById("game-panel");
 const gameStartBtn = document.getElementsByClassName("game-start")[0];
-const imagePath = '<img src="assets/images/' ;
+const imagePath = '<img src="assets/images/';
 const imageAttr = ' alt="Music notation image" class="note-img">';
 // Set the queastion images and answers
 let images = [
@@ -126,7 +130,6 @@ function isCorrect() {
  */
 function answerCorrect() {
     scoreUp();
-    greenText();
     displayImage();
 }
 
@@ -134,7 +137,6 @@ function answerCorrect() {
  * Calling class to turn text red for Wrong and display new image
  */
 function answerWrong() {
-    redText();
     displayImage();
 }
 
@@ -145,42 +147,3 @@ function scoreUp() {
     let oldScore = parseInt(document.getElementById("corrent-score").innerText);
     document.getElementById("corrent-score").innerText = ++oldScore;
 };
-
-/**
- * Insert class to turn the text for correct green
- */
-function greenText() {
-    let correctSpan = document.getElementsByClassName("is-correct");
-    correctSpan[0].classList.add("correct");
-    setTimeout(function () {
-        removeGreen();
-    }, 1000);
-}
-
-/**
- * Remove inserted class to reset the correct text
- */
-function removeGreen() {
-    let correctSpan = document.getElementsByClassName("is-correct");
-    correctSpan[0].classList.remove("correct");
-}
-
-/**
- * Insert class to turn the text for wrong red
- */
-function redText() {
-    let correctSpan = document.getElementsByClassName("is-correct");
-    correctSpan[1].classList.add("wrong");
-    setTimeout(function () {
-        removeRed();
-    }, 1000);
-}
-
-
-/**
- * Remove inserted class to reset the wrong text
- */
-function removeRed() {
-    let wrongSpan = document.getElementsByClassName("is-correct");
-    wrongSpan[1].classList.remove("wrong");
-}

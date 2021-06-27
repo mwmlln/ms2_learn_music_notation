@@ -236,8 +236,8 @@ This is the steps a user will take to play the game.
     
         <details><summary>Keyboard buttons</summary> <img src="assets/images/readme_ss/keyboard_button_ss.jpg"></details>
      
-      * If the answer is correct, "Correct" word becomes green for one second to notify the user. If the answer given is wrong, word "Wrong" will turn red instead.
-        <details><summary>Correct or Wrong</summary> <img src="assets/images/readme_ss/correct_wrong_ss.jpg"></details>  
+      * If the answer is correct, the key button becomes green for one second to notify the user. If the answer given is wrong, key button will turn red instead.
+       
 
       * Score will also go up by 1 when the answer is correct.    
     
@@ -344,8 +344,9 @@ https://stackoverflow.com/
  * For blinking start button
 https://www.educba.com/css-blinking-text/   
 
+* For setTimeout to remove button color after 1 second  https://www.sitepoint.com/delay-sleep-pause-wait/
 
-* Displaying ramdom image**
+* Displaying ramdom image
   https://www.javatpoint.com/random-image-generator-in-javascript
 
 * CSS in easy steps (book) by Mike Macgrath   For general CSS coding reference
