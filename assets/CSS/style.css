@@ -96,15 +96,21 @@ button {
 /* Color and size change to notify answer is correct */
 .correct {
     color: #30cb43;
-    font-size: 120%;
+    font-size: 130%;
     font-weight: bold;
+    letter-spacing: 150%;
+    font-variant: small-caps;
+    transition: 0.2s;
 }
 
 /* Color and size change to notify answer is incorrect */
 .wrong {
     color: #D62828;
-    font-size: 120%;
+    font-size: 130%;
     font-weight: bold;
+    letter-spacing: 150%;
+    font-variant: small-caps;
+    transition: 0.2s;
 }
 
 /*setting for flashing start button */
