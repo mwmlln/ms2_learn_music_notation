@@ -25,15 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
 let timerStat = false;
 const gamePanel = document.getElementById("game-panel");
 const gameStartBtn = document.getElementsByClassName("game-start")[0];
+const imagePath = '<img src="assets/images/' ;
+const imageAttr = ' data-type="c" alt="Music notation image" class="note-img">';
 // Set the queastion images and answers
 let images = [
-    '<img src="assets/images/note_c.png"  data-type="c" alt="Music notation image" class="note-img">',
-    '<img src="assets/images/note_d.png"  data-type="d" alt="Music notation image" class="note-img">',
-    '<img src="assets/images/note_e.png"  data-type="e" alt="Music notation image" class="note-img">',
-    '<img src="assets/images/note_f.png"  data-type="f" alt="Music notation image" class="note-img">',
-    '<img src="assets/images/note_g.png"  data-type="g" alt="Music notation image" class="note-img">',
-    '<img src="assets/images/note_a.png"  data-type="a" alt="Music notation image" class="note-img">',
-    '<img src="assets/images/note_b.png"  data-type="b" alt="Music notation image" class="note-img">',
+    `${imagePath}note_c.png"  ${imageAttr}`,
+    `${imagePath}note_d.png"  ${imageAttr}`,
+    `${imagePath}note_e.png"  ${imageAttr}`,
+    `${imagePath}note_f.png"  ${imageAttr}`,
+    `${imagePath}note_g.png"  ${imageAttr}`,
+    `${imagePath}note_a.png"  ${imageAttr}`,
+    `${imagePath}note_b.png"  ${imageAttr}`,
 ];
 
 /**
