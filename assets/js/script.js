@@ -26,16 +26,16 @@ let timerStat = false;
 const gamePanel = document.getElementById("game-panel");
 const gameStartBtn = document.getElementsByClassName("game-start")[0];
 const imagePath = '<img src="assets/images/' ;
-const imageAttr = ' data-type="c" alt="Music notation image" class="note-img">';
+const imageAttr = ' alt="Music notation image" class="note-img">';
 // Set the queastion images and answers
 let images = [
-    `${imagePath}note_c.png"  ${imageAttr}`,
-    `${imagePath}note_d.png"  ${imageAttr}`,
-    `${imagePath}note_e.png"  ${imageAttr}`,
-    `${imagePath}note_f.png"  ${imageAttr}`,
-    `${imagePath}note_g.png"  ${imageAttr}`,
-    `${imagePath}note_a.png"  ${imageAttr}`,
-    `${imagePath}note_b.png"  ${imageAttr}`,
+    `${imagePath}note_c.png"  data-type="c" ${imageAttr}`,
+    `${imagePath}note_d.png"  data-type="d" ${imageAttr}`,
+    `${imagePath}note_e.png"  data-type="e" ${imageAttr}`,
+    `${imagePath}note_f.png"  data-type="f" ${imageAttr}`,
+    `${imagePath}note_g.png"  data-type="g" ${imageAttr}`,
+    `${imagePath}note_a.png"  data-type="a" ${imageAttr}`,
+    `${imagePath}note_b.png"  data-type="b" ${imageAttr}`,
 ];
 
 /**
