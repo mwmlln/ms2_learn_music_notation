@@ -314,10 +314,10 @@ No errors were found when passing through the official (Jigsaw) validator [(Jigs
 
 No major issues or errors were returned by [JSHint](https://jshint.com/)
   The following metrics were returned:
-   *  There are 21 functions in this file.
-   *  Function with the largest signature take 0 arguments, while the median is 0.
-   *  Largest function has 8 statements in it, while the median is 2.
-   *  The most complex function has a cyclomatic complexity value of 4 while the median is 1.
+   * There are 17 functions in this file.
+   * Function with the largest signature take 0 arguments, while the median is 0.
+   * Largest function has 11 statements in it, while the median is 2.
+   * The most complex function has a cyclomatic complexity value of 4 while the median is 1.
 
 ##  Deployment 
 --- 
