@@ -2,26 +2,26 @@
 
 # Music Notation Game
 
-- [Table of Contents](#music-notation-game)
+- [Music Notation Game](#music-notation-game)
   * [The purpose for this site](#the-purpose-for-this-site)
-  * [**User experience(UX)**](#--user-experience-ux---)
-    + [**Target Audience**](#--target-audience--)
-    + [**Strategy**](#--strategy--)
-      - [**User goals**](#--user-goals--)
-      - [**Site owner’s goal**](#--site-owner-s-goal--)
-    + [**User Stories**](#--user-stories--)
-    + [**Scope**](#--scope--)
-    + [**Structure**](#--structure--)
-    + [**Skeleton**](#--skeleton--)
-  * [**Features**](#--features--)
-    + [**Game page**](#--game-page--)
-    + [**Title and big start button**](#--title-and-big-start-button--)
-    + [**The Game Area**](#--the-game-area--)
-    + [**The Score Area**](#--the-score-area--)
-    + [**HINT popup window**](#--hint-popup-window--)
-    + [**How to Play page**](#--how-to-play-page--)
-    + [**How the game is played**](#--how-the-game-is-played--)
-    + [**Game process**](#--game-process--)
+  * [User experience](#user-experience-ux-)
+    + [Target Audience](#target-audience)
+    + [Strategy](#strategy)
+      - [User goals](#user-goals)
+      - [Site owner’s goal](#site-owner-s-goal)
+    + [User Stories](#user-stories)
+    + [Scope](#scope)
+    + [Structure](#structure)
+    + [Skeleton](#skeleton)
+  * [Features](#features)
+    + [Game page](#game-page)
+    + [Title and big start button](#title-and-big-start-button)
+    + [The Game Area](#the-game-area)
+    + [The Score Area](#the-score-area)
+    + [HINT popup window](#hint-popup-window)
+    + [How to Play page](#how-to-play-page)
+    + [How the game is played](#how-the-game-is-played)
+    + [Game process](#game-process)
       - [Features Left to Implement](#features-left-to-implement)
   * [Technologies](#technologies)
     + [Languages](#languages)
@@ -29,12 +29,11 @@
   * [Testing](#testing)
     + [Validating code](#validating-code)
   * [Deployment](#deployment)
-  * [**Credits**](#--credits--)
-      - [**Coding**](#--coding--)
-    + [**Media**](#--media--)
+  * [Credits](#credits)
+      - [Coding](#coding)
+    + [Media](#media)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 
 This site is created as a Milestone project for Code Institute's Software Development course.
@@ -42,7 +41,7 @@ This site is created as a Milestone project for Code Institute's Software Develo
 Here is a link to the live project: [Music Notaion game](https://mwmlln.github.io/ms2_music_notation_game/)
 
 
-## **The purpose for this site**
+## The purpose for this site 
 ---
 Music Notation game is a site that hopes to help users learn to read very basic music notations while playing a game and having fun. 
 
@@ -58,22 +57,21 @@ Ability to read music notations is often a key to playing a musical instrument b
 Contents:
 
 
-## **User experience(UX)**
----
+## User experience
 
-### **Target Audience**
+### Target Audience
 
 This game is created for anyone who wants to get familiar with music notations whilst having fun playing game. The game has buttons inside the keyboard layout so users can get familiar with music notation names, also positions of the keys.
 
-### **Strategy**
+###  Strategy 
 ---
 
-#### **User goals**
+####  User goals 
 *	Get familiar with music notation
 *	Improve their ability to read music notations quickly 
 *	Enjoy playing a game
 
-#### **Site owner’s goal**
+####  Site owner’s goal 
 
 The main objective for creating this site was to gain skill set to build a presentable and interactive web site. To achieve this following considerations are taken:
 
@@ -82,7 +80,7 @@ The main objective for creating this site was to gain skill set to build a prese
 *	Efforts to create code clearly so that further implementation would go smoothly.
 
 
-### **User Stories**
+###  User Stories 
 
 This site is created following user’s expectations in mind.
 
@@ -103,7 +101,7 @@ This site is created following user’s expectations in mind.
   * Ability to enjoy challenges so that a user can improve their skill and have fun at the same time.
   * Providing pleasant user experience to leave a positive impression about our site and the topic.
 
-### **Scope**
+###  Scope 
 The scope of Music Notation game defined by the following features:
 
  * Simple and clear opening page.
@@ -113,7 +111,7 @@ The scope of Music Notation game defined by the following features:
  *	Quick access to HINT popup window.
  *	How To Play page for instruction on playing the game.
 
-### **Structure**
+###  Structure 
 
  * Navigation bar and footer are present on both pages for users to navigate within the site
  * On the opening page Title and large start button present in display
@@ -124,13 +122,13 @@ The scope of Music Notation game defined by the following features:
  * HINT button located in the navigation bar in game page
  * Timer to notify the remaining seconds and RESET button to exit the game early.
 
-### **Skeleton**
+###  Skeleton 
 
 Initial design wirefame
 
 ![wireframe ](assets/wireframe/wireframe_all.jpg) 
 
-* **Desktop**
+*  Desktop 
 
 <details><summary>Desktop version of landing page</summary> <img src="assets/wireframe/wireframe_pc.jpg"></details>
 
@@ -144,13 +142,13 @@ HINT button was moved into the nave bar for easier access.
 Initial design of How To play page consisted of game instructions and an image, however the image was taken out as it seemed unnessesary when users have easy access to it in the gaming page.
 
 
-* **Mobile**
+*  Mobile 
 
 <details><summary>Mobile version of landing page</summary> <img src="assets/wireframe/wireframe_home_mobile.jpg"></details>
 
 Mobile version has taken the same modification of PC version to UI, reducing popup window and having How To Play in another independent page.
 
-## **Features**
+##  Features 
 ---
 
 The web page consists of two pages, one for playing the game and the other for instruction on how to play the game.
@@ -160,17 +158,17 @@ Both pages have almost identical navigation bar and footer, with HINT button add
 <details><summary>Footer</summary> <img src="assets/images/readme_ss/footer_ss.jpg"></details>
 
 
-### **Game page** 
+###  Game page  
 
 The game page only displays title and large start button to make it clear what button needs to be pressed to start a game.
 
 <details><summary>Main game page</summary> <img src="assets/images/readme_ss/index_opening_ss.jpg"></details>
 
-### **Title and big start button**
+###  Title and big start button 
 
 A big start button is the only thing a user can see in the main page body besides the title. This approach was taken to make it simple and clear what the fist step is to play the game. 
 
-### **The Game Area**
+###  The Game Area 
 
 It consists of timer, reset button, image display area and buttons that are located in the layout of a keyboard. 
 Once the start button is pressed, a random image of 1 note will be displayed from a total of 7 images.
@@ -180,7 +178,7 @@ A user will try to press the right key(i.e Notaion name alphabet) for the note i
 <details><summary>Main game panel</summary> <img src="assets/images/readme_ss/game_ss.jpg"></details>
 
 
-### **The Score Area**
+###  The Score Area 
 
 Each time a user gets a correct answer, the score will increment by 1. The score area displays the score for the current game on the left side.
 On the right side, the score from the last game is displayed to remind the user so that they can try to improve their skill in each game.
@@ -188,7 +186,7 @@ On the right side, the score from the last game is displayed to remind the user 
 <details><summary>Score Area</summary> <img src="assets/images/readme_ss/score_ss.jpg"></details>
 
 
-### **HINT popup window**
+###  HINT popup window 
 
 The button to display a popup window is located in the navigation bar in the gaming page.
 This window contains an image with all the notaion and alphabets used for the game. 
@@ -197,20 +195,20 @@ The bootstrap modal is used to diplay this window.
 <details><summary>Hint popup window</summary> <img src="assets/images/readme_ss/hint_window_ss.jpg"></details>
   
 
-### **How to Play page**
+###  How to Play page 
 This page is created to provide instructions on how to play the game.
 A user can read this page to understand how the game works prior to starting.
 
 <details><summary>How To Play Page</summary> <img src="assets/images/readme_ss/howto_ss.jpg"></details> 
 
 
-### **How the game is played**
+###  How the game is played 
 
 On opening, the web site users are presented with a nav bar, a footer and main body with a title and large play button which will initiate a game. 
 
 This is the steps a user will take to play the game.
 
-### **Game process**
+###  Game process 
 
 *  After the page is loaded, a user has three main choices which are:
 
@@ -260,16 +258,16 @@ This is the steps a user will take to play the game.
 The initial intention for the game was to have corresponding sounds when the randomly selected notation image was displayed and also when a user pressed the alphabet buttons. However the nature of the game being fast paced, playing audio consistently and each sound to be clearly identifiable turned out to be too difficult to implemet at this stage due to short space of time given to complete the project.
 
 
-## **Technologies**
+##  Technologies 
 --- 
 
-### **Languages**
+###  Languages 
 
  * HTML5
  * CSS3
  * JavaScript
 
-### **Other Technologies, Frameworks & Libraries**
+###  Other Technologies, Frameworks & Libraries 
 
  * Google Fonts
  * Bootstrap v5.0
@@ -277,7 +275,7 @@ The initial intention for the game was to have corresponding sounds when the ran
  * GitHub and Gitpod
  * Balsamic
  
-## **Testing**
+##  Testing 
 --- 
 
 This site was tested with number of ways to ensure the game function works as intended and has a clear procedure that is easy to understand for every user.
@@ -300,7 +298,7 @@ This error was fixed by giving the timer a status of true or false and for it to
 CSS min-height and min-width was used for layout where view height and view width was set to ensure that the image or layout doesn't overflow.
 The footer is set to stay on the bottom of the page for consistent appearance.
 
-### **Validating code**
+###  Validating code 
 
 No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmwmlln.github.io%2Fms2_music_notation_game%2F)
 
@@ -318,7 +316,7 @@ No major issues or errors were returned by [JSHint](https://jshint.com/)
    *  Largest function has 8 statements in it, while the median is 2.
    *  The most complex function has a cyclomatic complexity value of 4 while the median is 1.
 
-## **Deployment**
+##  Deployment 
 --- 
 This site was published in GitHub.
 Following in the procedure taken to deploy this page.
@@ -329,10 +327,10 @@ Following in the procedure taken to deploy this page.
 5. Change the branch from None to Master.
 6. Website link is provided, copy the link and paste it onto link section in my repository page. This is the link to the published site,  [Music Notaion Game](https://mwmlln.github.io/ms2_music_notation_game/)
 
-## **Credits**
+##  Credits 
 --- 
 
-#### **Coding**
+####  Coding 
 
 Main approach for creating this game was taken from Code Institute's walk through project video of Love Maths.
 Among with other tutorial videos and online books outside the course material to gain general knowlge of JavaScript I have used [Mozilla](https://developer.mozilla.org/) and [Stackoverflow](https://stackoverflow.com) and google search for solutions to make this game work. In particular, below are the links that I used as a help for some of the functions to work.
@@ -351,7 +349,7 @@ https://www.educba.com/css-blinking-text/
 
 * CSS in easy steps (book) by Mike Macgrath   For general CSS coding reference
 
-### **Media**
+###  Media 
 
 * Color theme was chosen from this site https://coolors.co/cfcfea-a89b9d-816c61-575a4b-2a2c24
 
@@ -359,11 +357,11 @@ https://www.educba.com/css-blinking-text/
 
 * Screenshots and the imgae in HINT page was created by Adobe Illustrator
 
-**Fonts**
+ **Fonts**
 
  * https://fonts.google.com/
 
-**Icons**
+ **Icons**
 
  * https://fontawesome.com/
 
