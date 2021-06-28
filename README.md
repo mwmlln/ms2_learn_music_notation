@@ -234,8 +234,11 @@ This is the steps a user will take to play the game.
     
         <details><summary>Keyboard buttons</summary> <img src="assets/images/readme_ss/keyboard_button_ss.jpg"></details>
      
-      * If the answer is correct, the key button becomes green for one second to notify the user. If the answer given is wrong, key button will turn red instead.
-       
+      * If the answer is correct, the button in the key becomes green for one second to notify the user. If the answer given is wrong, the button will turn red instead.
+
+        <details><summary>Button turns green when correct</summary> <img src="assets/images/readme_ss/correct_ss.jpg"></details>      
+
+        <details><summary>Button turns red when incorrect</summary> <img src="assets/images/readme_ss/wrong_ss.jpg"></details>            
 
       * Score will also go up by 1 when the answer is correct.    
     
