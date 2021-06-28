@@ -244,7 +244,7 @@ This is the steps a user will take to play the game.
     
 
       * Another image will be displayed. A user will repeat the previous process and try to get as many correct answers to obtain high score during 60 seconds.
-      Scores for current game and previous game are displayed just under the corret/Wrong Area.
+      Scores for current game and previous game are displayed just under the buttons in keyboard layout.
         <details><summary>score</summary> <img src="assets/images/readme_ss/score_ss.jpg"></details>   
        
       * When the countdown timer turns zero, the popup window is displayed to notify the user about the game completion with the final score.
