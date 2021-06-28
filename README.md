@@ -2,13 +2,13 @@
 
 # Music Notation Game
 
-- [Music Notation Game](#music-notation-game)
+- [Table of contents](#music-notation-game)
   * [The purpose for this site](#the-purpose-for-this-site)
-  * [User experience](#user-experience-ux-)
+  * [User experience](#user-experience)
     + [Target Audience](#target-audience)
     + [Strategy](#strategy)
       - [User goals](#user-goals)
-      - [Site owner’s goal](#site-owner-s-goal)
+      - [Site owner’s goal](#site-owner\'s-goal)
     + [User Stories](#user-stories)
     + [Scope](#scope)
     + [Structure](#structure)
@@ -25,7 +25,7 @@
       - [Features Left to Implement](#features-left-to-implement)
   * [Technologies](#technologies)
     + [Languages](#languages)
-    + [Other Technologies, Frameworks & Libraries](#other-technologies--frameworks---libraries)
+    + [Other Technologies\, Frameworks \& Libraries](#other-technologies\,-frameworks-\&-libraries)
   * [Testing](#testing)
     + [Validating code](#validating-code)
   * [Deployment](#deployment)
